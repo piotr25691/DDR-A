@@ -215,6 +215,8 @@ local function MakeRow(rownames, idx)
 							chars[i] = chars[i]:gsub("Ace", "A")
 											   :gsub("Rinon Dark", "Dark Rinon")
 											   :gsub(" 2", ":2")
+											   :gsub(" 3", ":3")
+											   :gsub(" 4", ":4")
 						end
 						if choice == 0 then
 							self:settext("OFF"):diffuse(color("#06ff06")):diffusetopedge(color("#74ff74"))

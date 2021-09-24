@@ -119,9 +119,11 @@ local function TestActorScroller()
 				elseif string.find( value:GetDisplayName(), "Rinon") then
 					self:zoom(8.7)
 				elseif string.find( value:GetDisplayName(), "Rena") then
-					self:zoom(10.7)
+					self:zoom(12)
 				elseif string.find( value:GetDisplayName(), "PiX") then
 					self:zoom(5)
+				elseif string.find( value:GetDisplayName(), "[HP]") then
+					self:zoom(12)
 				elseif string.match(value:GetDisplayName(), "(X)") or 
 					   string.match(value:GetDisplayName(), "(X2)") or 
 					   string.match(value:GetDisplayName(), "(Ace)") or 

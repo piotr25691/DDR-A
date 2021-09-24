@@ -11,14 +11,52 @@ end
 local t = Def.ActorFrame{
 	InitCommand=function(self)
 		self:Center():fov(gFOV):addy(10);
-		--self:Center():fov(90):rotationy(180):z( WideScale(300,400) ):addy(10);
 	end;
 	OnCommand=function(self) Camera = self; end;
 };
 
-if Video then
-	-------------- CHARACTERS --------------
 
+if Video then
+------- DANCESTAGE LOADER PART 1 -------
+	------- AMBIENT
+
+if DanceStage == "DANCING RAYS (X)" or 
+   DanceStage == "CLUB (X2)" or 
+   DanceStage == "BOOM LIGHT (X2)" or 
+   DanceStage == "BOOM BOOM BOOM (X)" 
+then
+
+		t[#t+1] = Def.ActorFrame{
+			Def.Model {
+				Meshes=StagesFolder..DanceStage.."/Map_B.txt";
+				Materials=StagesFolder..DanceStage.."/Map_B.txt";
+				Bones=StagesFolder..DanceStage.."/Map_B.txt";
+				OnCommand=function(self)
+					self:cullmode(2):zoom(CheckStageConfigurationNumber(1,"StageZoom") )
+					self:xy(CheckStageConfigurationNumber(0,"StageXOffset"), CheckStageConfigurationNumber(0,"StageYOffset"))
+				end,
+			};
+		};
+	
+	else
+
+		t[#t+1] = Def.ActorFrame{
+			Def.Model {
+				Meshes=StagesFolder..DanceStage.."/Map.txt";
+				Materials=StagesFolder..DanceStage.."/Map.txt";
+				Bones=StagesFolder..DanceStage.."/Map.txt";
+				OnCommand=function(self)
+					self:cullmode(2):zoom(CheckStageConfigurationNumber(1,"StageZoom") )
+					self:xy(CheckStageConfigurationNumber(0,"StageXOffset"), CheckStageConfigurationNumber(0,"StageYOffset"))
+				end,
+			};
+		};
+end
+
+	
+
+
+	-------------- CHARACTERS --------------
 		------- SIZE
 		Character_1 = GAMESTATE:GetCharacter(PLAYER_1):GetDisplayName()
 		Character_2 = GAMESTATE:GetCharacter(PLAYER_2):GetDisplayName()
@@ -28,9 +66,11 @@ if Video then
 	elseif 	string.match(Character_1, "Baby") 	then
 		CharacterSize1=0.4
 	elseif 	string.match(Character_1, "Rena") 	then
-		CharacterSize1=0.82
+		CharacterSize1=0.9
 	elseif 	string.match(Character_1, "PiX")	then
 		CharacterSize1=0.38
+	elseif 	string.match(Character_1, "Jun") 	then
+		CharacterSize1=0.9
 	elseif (string.match(Character_1, "(Ace)") 	or 
 			string.match(Character_1, "(X2)") 	or 
 			string.match(Character_1, "(X)") 	or 
@@ -48,13 +88,15 @@ if Video then
 	elseif 	string.match(Character_2, "Baby")	then
 		CharacterSize2=0.4
 	elseif 	string.match(Character_2, "Rena")	then
-		CharacterSize2=0.82
+		CharacterSize2=0.9
 	elseif 	string.match(Character_2, "PiX")	then
 		CharacterSize2=0.38
+	elseif 	string.match(Character_2, "Jun") 	then
+		CharacterSize2=0.9
 	elseif (string.match(Character_2, "(Ace)") 	or 
 			string.match(Character_2, "(X2)") 	or 
 			string.match(Character_2, "(X)") 	or 
-			string.match(Character_2, "(SN)") 	or 
+			string.match(Character_2, "(SN)") 	or  
 			string.match(Character_2, "(2nd)"))
 	then
 		CharacterSize2=1
@@ -76,6 +118,8 @@ if Video then
 			string.match(Character_1, "PiX") or
 			string.match(Character_1, "Rena") or
 			string.match(Character_1, "Emi") or
+			string.match(Character_1, "Zukin") or
+			string.match(Character_1, "Jun") or
 			string.match(Character_1, "Janet")
 		then
 			Char1_Gen="F"
@@ -84,6 +128,7 @@ if Video then
 			string.match(Character_1, "Disco") or
 			string.match(Character_1, "Baby") or
 			string.match(Character_1, "Victory") or
+			string.match(Character_1, "Gus") or
 			string.match(Character_1, "Dred")
 		then
 			Char1_Gen="M"
@@ -101,6 +146,8 @@ if Video then
 			string.match(Character_2, "PiX") or
 			string.match(Character_2, "Rena") or
 			string.match(Character_2, "Emi") or
+			string.match(Character_2, "Zukin") or
+			string.match(Character_2, "Jun") or
 			string.match(Character_2, "Janet")
 		then
 			Char2_Gen="F"
@@ -109,6 +156,7 @@ if Video then
 			string.match(Character_2, "Disco") or
 			string.match(Character_2, "Baby") or
 			string.match(Character_2, "Victory") or
+			string.match(Character_2, "Gus") or
 			string.match(Character_2, "Dred")
 		then
 			Char2_Gen="M"
@@ -126,7 +174,7 @@ if Video then
 			(Char1_Gen == "F" and Char2_Gen == "M") or
 			(Char1_Gen == "R" and Char2_Gen == "M")
 		then
-			DoubleGenre_Choreo = math.random(1,7)
+			DoubleGenre_Choreo = math.random(1,10)
 			if DoubleGenre_Choreo == 1 then Choreo = "Embarr"
 			elseif DoubleGenre_Choreo == 2 then Choreo = "Higher"
 			elseif DoubleGenre_Choreo == 3 then Choreo = "River"
@@ -134,6 +182,9 @@ if Video then
 			elseif DoubleGenre_Choreo == 5 then Choreo = "Teo1"
 			elseif DoubleGenre_Choreo == 6 then Choreo = "Wave"
 			elseif DoubleGenre_Choreo == 7 then Choreo = "Phantasma"
+			elseif DoubleGenre_Choreo == 8 then Choreo = "Cute"
+			elseif DoubleGenre_Choreo == 9 then Choreo = "Kimi"
+			elseif DoubleGenre_Choreo == 10 then Choreo = "Marginal"
 			end
 
 		elseif (Char1_Gen == "F" and Char2_Gen == "F") or
@@ -141,7 +192,7 @@ if Video then
 			(Char1_Gen == "R" and Char2_Gen == "F") or
 			(Char1_Gen == "F" and Char2_Gen == "R")
 		then
-			DoubleGenre_Choreo = math.random(1,9)
+			DoubleGenre_Choreo = math.random(1,12)
 			if DoubleGenre_Choreo == 1 then Choreo = "Yume"
 			elseif DoubleGenre_Choreo == 2 then Choreo = "Brain"
 			elseif DoubleGenre_Choreo == 3 then Choreo = "Embarr"
@@ -151,10 +202,13 @@ if Video then
 			elseif DoubleGenre_Choreo == 7 then Choreo = "River"
 			elseif DoubleGenre_Choreo == 8 then Choreo = "Teo1"
 			elseif DoubleGenre_Choreo == 9 then Choreo = "Wave"
+			elseif DoubleGenre_Choreo == 10 then Choreo = "Cute"
+			elseif DoubleGenre_Choreo == 11 then Choreo = "Kimi"
+			elseif DoubleGenre_Choreo == 12 then Choreo = "Marginal"
 			end
 
 		elseif (Char1_Gen == "M" and Char2_Gen == "M") then
-			DoubleGenre_Choreo = math.random(1,11)
+			DoubleGenre_Choreo = math.random(1,13)
 			if DoubleGenre_Choreo == 1 then Choreo = "Embarr"
 			elseif DoubleGenre_Choreo == 2 then Choreo = "Specialist"
 			elseif DoubleGenre_Choreo == 3 then Choreo = "Higher"
@@ -166,25 +220,30 @@ if Video then
 			elseif DoubleGenre_Choreo == 9 then Choreo = "Chaos"
 			elseif DoubleGenre_Choreo == 10 then Choreo = "Teo1"
 			elseif DoubleGenre_Choreo == 11 then Choreo = "Wave"
+			elseif DoubleGenre_Choreo == 12 then Choreo = "Kimi"
+			elseif DoubleGenre_Choreo == 13 then Choreo = "Marginal"
 			end
 		end
 	end
 
 
 	------- CHARACTER LOAD -------
-		YND = math.random(1,12)
+		YND = math.random(1,15)
 		if YND == 1 then Yuni = "F AAAgain"
 		elseif YND == 2 then Yuni = "F Brain"
-		elseif YND == 3 then Yuni = "F Embarr"
-		elseif YND == 4 then Yuni = "F Higher"
-		elseif YND == 5 then Yuni = "F Love"
-		elseif YND == 6 then Yuni = "F Luka"
-		elseif YND == 7 then Yuni = "F Phantasma"
-		elseif YND == 8 then Yuni = "F River"
-		elseif YND == 9 then Yuni = "F Saturation"
-		elseif YND == 10 then Yuni = "F Teo1"
-		elseif YND == 11 then Yuni = "F Wave"
-		elseif YND == 12 then Yuni = "F Yume"
+		elseif YND == 3 then Yuni = "F Cute"
+		elseif YND == 4 then Yuni = "F Embarr"
+		elseif YND == 5 then Yuni = "F Higher"
+		elseif YND == 6 then Yuni = "F Kimi"
+		elseif YND == 7 then Yuni = "F Love"
+		elseif YND == 8 then Yuni = "F Luka"
+		elseif YND == 9 then Yuni = "F Marginal"
+		elseif YND == 10 then Yuni = "F Phantasma"
+		elseif YND == 11 then Yuni = "F River"
+		elseif YND == 12 then Yuni = "F Saturation"
+		elseif YND == 13 then Yuni = "F Teo1"
+		elseif YND == 14 then Yuni = "F Wave"
+		elseif YND == 15 then Yuni = "F Yume"
 		end
 		
 	if GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Yuni's Nocturnal Days" then
@@ -207,12 +266,14 @@ if Video then
 				string.match(Character_1, "(X2)") or 
 				string.match(Character_1, "(X)") or 
 				string.match(Character_1, "(SN)") or
+				string.match(Character_1, "[HP]") or
 				string.match(Character_1, "(2nd)")) 
 				and
 				(string.match(Character_2, "(Ace)") or 
 				string.match(Character_2, "(X2)") or 
 				string.match(Character_2, "(X)") or 
 				string.match(Character_2, "(SN)") or
+				string.match(Character_2, "[HP]") or
 				string.match(Character_2, "(2nd)"))
 				then
 					BonesToLoad1=GAMESTATE:GetCharacter(player):GetCharacterDir().."Dance/"..Char1_Gen.." "..Choreo..".redir"
@@ -245,11 +306,29 @@ if Video then
 		end
 	end;
 
-	-------------- DANCE STAGES --------------
+------- DANCESTAGE LOADER PART 2 -------
+	------- LIGHTS -------
 
-		------- CAMERA -------
+	if DanceStage == "DANCING RAYS (X)" or 
+	   DanceStage == "CLUB (X2)" or 
+	   DanceStage == "BOOM LIGHT (X2)" or 
+	   DanceStage == "BOOM BOOM BOOM (X)" 
+	then
+		--AMBIENT
+			t[#t+1] = Def.ActorFrame{
+				Def.Model {
+					Meshes=StagesFolder..DanceStage.."/Map_A.txt";
+					Materials=StagesFolder..DanceStage.."/Map_A.txt";
+					Bones=StagesFolder..DanceStage.."/Map_A.txt";
+					OnCommand=function(self)
+						self:cullmode(1):zoom(CheckStageConfigurationNumber(1,"StageZoom") )
+						self:xy(CheckStageConfigurationNumber(0,"StageXOffset"), CheckStageConfigurationNumber(0,"StageYOffset"))
+					end,
+				};
+			};
+	end
 
-
+	------- CAMERA -------
 
 	CamRan=1
 	local CameraRandomList = {}
@@ -291,14 +370,20 @@ if Video then
 	local file = RageFileUtil.CreateRageFile()
 
 	if GAMESTATE:GetCurrentSong():HasJacket() then
-		if string.match(DanceStage, "VIDEO") or DanceStage == "BIG SCREEN (X2)" or string.match(DanceStage, "REPLICANT") then
+		if string.match(DanceStage, "VIDEO") or 
+		   string.match(DanceStage, "REPLICANT") or 
+		   DanceStage == "BIG SCREEN (X2)" 
+		then 
 			file:Open(Animation,2)
 			file:Write("[AnimatedTexture]\nFrame0000=../.."..GAMESTATE:GetCurrentSong():GetJacketPath().."\nDelay0000=1")
 			file:Close()
 			file:destroy()
 		end
 	elseif GAMESTATE:GetCurrentSong():HasBackground() then
-		if string.match(DanceStage, "VIDEO") or DanceStage == "BIG SCREEN (X2)" or string.match(DanceStage, "REPLICANT") then
+		if string.match(DanceStage, "VIDEO") or 
+		   string.match(DanceStage, "REPLICANT") or 
+		   DanceStage == "BIG SCREEN (X2)" 
+		then
 			file:Open(Animation,2)
 			file:Write("[AnimatedTexture]\nFrame0000=../.."..GAMESTATE:GetCurrentSong():GetBackgroundPath().."\nDelay0000=1")
 			file:Close()
@@ -315,52 +400,6 @@ if Video then
 		local content = Config.Load(conf,filetoload)
 		if content then result = tonumber(content) end
 		return result
-	end
-
-	------- DANCESTAGE LOADER -------
-
-
-
-	if DanceStage == "DANCING RAYS (X)" or DanceStage == "CLUB (X2)" or DanceStage == "BOOM LIGHT (X2)" or DanceStage == "BOOM BOOM BOOM (X)" then
-
-	--LIGHT
-		t[#t+1] = Def.ActorFrame{
-			Def.Model {
-				Meshes=StagesFolder..DanceStage.."/Map_B.txt";
-				Materials=StagesFolder..DanceStage.."/Map_B.txt";
-				Bones=StagesFolder..DanceStage.."/Map_B.txt";
-				OnCommand=function(self)
-					self:cullmode(2):zoom(CheckStageConfigurationNumber(1,"StageZoom") )
-					self:xy(CheckStageConfigurationNumber(0,"StageXOffset"), CheckStageConfigurationNumber(0,"StageYOffset"))
-				end,
-			};
-		};
-	
-	--AMBIENT
-		t[#t+1] = Def.ActorFrame{
-			Def.Model {
-				Meshes=StagesFolder..DanceStage.."/Map_A.txt";
-				Materials=StagesFolder..DanceStage.."/Map_A.txt";
-				Bones=StagesFolder..DanceStage.."/Map_A.txt";
-				OnCommand=function(self)
-					self:cullmode(1):zoom(CheckStageConfigurationNumber(1,"StageZoom") )
-					self:xy(CheckStageConfigurationNumber(0,"StageXOffset"), CheckStageConfigurationNumber(0,"StageYOffset"))
-				end,
-			};
-		};
-	else
-
-		t[#t+1] = Def.ActorFrame{
-			Def.Model {
-				Meshes=StagesFolder..DanceStage.."/Map.txt";
-				Materials=StagesFolder..DanceStage.."/Map.txt";
-				Bones=StagesFolder..DanceStage.."/Map.txt";
-				OnCommand=function(self)
-					self:cullmode(2):zoom(CheckStageConfigurationNumber(1,"StageZoom") )
-					self:xy(CheckStageConfigurationNumber(0,"StageXOffset"), CheckStageConfigurationNumber(0,"StageYOffset"))
-				end,
-			};
-		};
 	end
 	
 	t[#t+1] = LoadActor(StagesFolder..DanceStage.."/Cameras.lua" )

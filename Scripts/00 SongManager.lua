@@ -59,15 +59,17 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "DEAD END" 															then return "BOOM DARK "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "DROP THE BOMB" 														then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "DYNAMITE RAVE" 														then return "CYBER (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "GRADIUSIC CYBER ～AMD G5 MIX～" 									then return "CYBER (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "GRADIUSIC CYBER ～AMD G5 MIX～" 										then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "KEEP ON MOVIN'" 													then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "La Señorita" 														then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "La Señorita Virtual" 												then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "LOVE THIS FEELIN'" 													then return "CYBER (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "LUV TO ME (AMD MIX)" 												then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "PARANOiA Rebirth" 													then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Silent Hill" 														then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "think ya better D" 													then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "TRIP MACHINE～luv mix～" 											then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "TURN ME ON (HEAVENLY MIX)" 											then return "CLUB (X2)"
 	
 ----------------------------------------------------------------------------- DDR 4thMIX -----------------------------------------------------------------------------
 	
@@ -77,7 +79,7 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "BURNIN' THE FLOOR" 													then return "CLUB (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "CAN'T STOP FALLIN' IN LOVE" 										then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "CELEBRATE NITE" 													then return "DANCING RAYS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Don't Stop!～AMD 2nd MIX～" 										then return "BOOM LIGHT (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Don't Stop!～AMD 2nd MIX～" 											then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "DROP OUT" 															then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "era (nostalmix)" 													then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "HIGHER" 															then return "BOOM LIGHT (X2)"
@@ -107,13 +109,13 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "INSERTiON" 															then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "PARANOiA ETERNAL" 													then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "STILL IN MY HEART" 													then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "サナ・モレッテ・ネ・エンテ" 													then return "DANCING RAYS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "サナ・モレッテ・ネ・エンテ" 														then return "DANCING RAYS (X)"
 
 ----------------------------------------------------------------------------- DDRMAX ---------------------------------------------------------------------------------
 
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "CANDY☆" 															then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "exotic ethnic" 														then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Healing Vision ～Angelic mix～" 									then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Healing Vision ～Angelic mix～" 										then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Let the beat hit em!(CLASSIC R&B STYLE)" 							then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "MAX 300" 															then return "VIDEO BLACK (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ORION.78～civilization mix～" 										then return "DANCING RAYS (X)"
@@ -162,14 +164,14 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "AM-3P -303 BASS MIX-" 												then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "bag" 																then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "BE LOVIN" 															then return "CYBER (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Colors ～for EXTREME～" 											then return "CYBER (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Colors ～for EXTREME～" 												then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "CUTIE CHASER(MORNING MIX)" 											then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Dance Dance Revolution" 											then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Destiny lovers" 													then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "DROP THE BOMB(SyS.F. Mix)" 											then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Frozen Ray ～for EXTREME～" 										then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Frozen Ray ～for EXTREME～" 											then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Gamelan de Couple" 													then return "BOOM LIGHT (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "GRADUATION ～それぞれの明日～" 										then return "BOOM LIGHT (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "GRADUATION ～それぞれの明日～" 											then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Happy Wedding" 														then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Heaven is a '57 metallic gray ～gimmix～" 							then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "HYPER EUROBEAT" 													then return "DANCING RAYS (X)"
@@ -181,7 +183,7 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "LA BAMBA" 															then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "L'amour et la liberté(DDR Ver.)" 									then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "LOVE♥SHINE" 														then return "BOOM LIGHT (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Miracle Moon ～L.E.D.LIGHT STYLE MIX～" 							then return "DANCING RAYS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Miracle Moon ～L.E.D.LIGHT STYLE MIX～" 								then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "PARANOIA survivor" 													then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "PARANOIA survivor MAX" 												then return "BOOM DARK "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Pink Rose" 															then return "CYBER (X2)"
@@ -199,8 +201,8 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "xenon" 																then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "三毛猫ロック" 															then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "大見解" 																then return "CYBER (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "桜" 																then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "蒼い衝動 ～for EXTREME～" 											then return "CYBER (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "桜" 																	then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "蒼い衝動 ～for EXTREME～" 												then return "CYBER (X2)"
 
 ----------------------------------------------------------------------------- DDR SuperNOVA
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "A Stupid Barber" then return "BOOM BOOM BOOM (X)"
@@ -419,10 +421,10 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Xmix3 (Stomp Dem Groove)" 											then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Xmix4 (Linear Momentum)" 											then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Xmix5 (Overcrush)" 													then return "DANCING RAYS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スキ☆メロ" 															then return "LOVE SWEETS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ポリリズム" 															then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スキ☆メロ" 																then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ポリリズム" 																then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "世界は踊る" 															then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "凛として咲く花の如く" 													then return "BOOM LIGHT (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "凛として咲く花の如く" 														then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "旅人" 																then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "零 - ZERO -" 														then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "革命(X-Special)" 													then return "CRYSTALDIUM (X)"
@@ -462,7 +464,7 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "I'm so Happy" 														then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "in love wit you" 													then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "KIMONO♥PRINCESS" 													then return "BIG SCREEN (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "KISS KISS KISS 秋葉工房 MIX" 										then return "VIDEO WHITE (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "KISS KISS KISS 秋葉工房 MIX" 											then return "VIDEO WHITE (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "La libertad" 														then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "La receta" 															then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Leaving…" 															then return "VIDEO WHITE (X2)"
@@ -506,11 +508,11 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "What Will Come of Me" 												then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "You are a Star" 													then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Your Angel" 														then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ZETA～素数の世界と超越者～" 											then return "VIDEO WHITE (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ZETA～素数の世界と超越者～" 												then return "VIDEO WHITE (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ΔMAX" 																then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "☆shining☆" 															then return "BIG SCREEN (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "不沈艦CANDY" 														then return "VIDEO WHITE (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "冥" 																then return "VIDEO WHITE (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "不沈艦CANDY" 															then return "VIDEO WHITE (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "冥" 																	then return "VIDEO WHITE (X2)"
 
 ----------------------------------------------------------------------------- DDR X3 vs 2ndMIX
 
@@ -930,7 +932,7 @@ local Boom = Boom()
 
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "50th Memorial Songs -Beginning Story-" 								then return "BOOM RED "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "50th Memorial Songs -Flagship medley-" 								then return "DAWN STREETS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "50th Memorial Songs -二人の時 ～under the cherry blossoms～-" 		then return "LOVE SWEETS (X)"	
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "50th Memorial Songs -二人の時 ～under the cherry blossoms～-" 			then return "LOVE SWEETS (X)"	
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "50th Memorial Songs -The BEMANI History-" 							then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Ace out" 															then return "BOOM YELLOW "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Afterimage d'automne" 												then return "BOOM LIGHT (X2)"
@@ -1004,30 +1006,30 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "voltississimo" 														then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Waiting" 															then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ΩVERSOUL" 															then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "おーまい！らぶりー！すうぃーてぃ！だーりん！" 									then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "おーまい！らぶりー！すうぃーてぃ！だーりん！" 										then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "革命パッショネイト" 														then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "腐れ外道とチョコレゐト" 													then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "最終鬼畜妹フランドール・S" 												then return "BOOM RED "..Boom
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "腐れ外道とチョコレゐト" 														then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "最終鬼畜妹フランドール・S" 													then return "BOOM RED "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "最小三倍完全数" 														then return "CYBER (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スイーツはとまらない♪" 													then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スイーツはとまらない♪" 														then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "すきなことだけでいいです" 													then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "タイガーランペイジ" 														then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "どきドキ バレンタイン" 													then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "どきドキ バレンタイン" 														then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "毒占欲" 																then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ナイト・オブ・ナイツ (Ryu☆Remix)" 											then return "BOOM BLUE "..Boom
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "熱情のサパデアード" 													then return "CLUB (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "熱情のサパデアード" 														then return "CLUB (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "び" 																	then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ヒカリユリイカ" 															then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ベビーステップ" 															then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ホーンテッド★メイドランチ" 													then return "BOOM DARK "..Boom
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "星屑の夜果て" 														then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "未完成ノ蒸氣驅動乙女 (DDR Edition)" 									then return "BOOM YELLOW "..Boom
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "星屑の夜果て" 															then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "未完成ノ蒸氣驅動乙女 (DDR Edition)" 										then return "BOOM YELLOW "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ミッドナイト☆WAR" 														then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "未来（ダ）FUTURE" 														then return "DANCING RAYS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "妄想感傷代償連盟" 													then return "DANCING RAYS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "妄想感傷代償連盟" 														then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ライアーダンス" 															then return "DANCING RAYS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ラブキラ☆スプラッシュ" 													then return "LOVE SWEETS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ランカーキラーガール" 													then return "BOOM YELLOW "..Boom
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ラブキラ☆スプラッシュ" 														then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ランカーキラーガール" 														then return "BOOM YELLOW "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "令和" 																then return "BOOM LIGHT (X2)"
 	
 ----------------------------------------------------------------------------- DDR A20 PLUS ---------------------------------------------------------------------------
@@ -1103,42 +1105,44 @@ local Boom = Boom()
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "We're so Happy"														then return "CRYSTALDIUM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "X-ray binary"														then return "DANCING RAYS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Yuni's Nocturnal Days"												then return "DANCING RAYS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "至上のラトゥーリア"														then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "至上のラトゥーリア"															then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "御伽噺に幕切れを"														then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "逆さま♥シンデレラパレード"													then return "LOVE SWEETS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "東京神話"															then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "叛逆のディスパレート"													then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "アリスサイド・キャスリング"													then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "花は折りたし梢は高し"													then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "東京神話"																then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "叛逆のディスパレート"														then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "アリスサイド・キャスリング"														then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "花は折りたし梢は高し"														then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "追憶のアリア"															then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "蒼が消えるとき"															then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "狂水一華"															then return "DANCING RAYS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ノルエピネフリン"														then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "春を告げる"															then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "狂水一華"																then return "DANCING RAYS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ノルエピネフリン"															then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "春を告げる"																then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "梅雪夜"																then return "CRYSTALDIUM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ハラショー！おにぎりサーカス団☆"											then return "LOVE SWEETS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "イノセントバイブル"														then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ウソツキ横丁は雨模様"													then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "世界の果てに約束の凱歌を -DDR Extended Megamix-"						then return "BOOM YELLOW "..Boom
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ここからよろしく大作戦143"												then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ハラショー！おにぎりサーカス団☆"													then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "イノセントバイブル"															then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ウソツキ横丁は雨模様"														then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "世界の果てに約束の凱歌を -DDR Extended Megamix-"							then return "BOOM YELLOW "..Boom
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ここからよろしく大作戦143"													then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "なだめスかし Negotiation"												then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "思想犯"																then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "彼方のリフレシア"														then return "BOOM LIGHT (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "雑草魂なめんなよ！"													then return "BOOM LIGHT (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スカイクラッドの観測者"													then return "BOOM WHITE "..Boom
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "彼方のリフレシア"															then return "BOOM LIGHT (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "雑草魂なめんなよ！"														then return "BOOM LIGHT (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スカイクラッドの観測者"														then return "BOOM WHITE "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "恋"																	then return "DANCING RAYS (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "勇猛無比"															then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "勇猛無比"																then return "BOOM BOOM BOOM (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ロキ(w/緒方恵美)"														then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "鋳鉄の檻"															then return "BOOM BOOM BOOM (X)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スーパー戦湯ババンバーン"												then return "BOOM LIGHT (X2)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "鋳鉄の檻"																then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "スーパー戦湯ババンバーン"													then return "BOOM LIGHT (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ユメブキ"																then return "CYBER (X2)"
-	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "シル・ヴ・プレジデント"													then return "LOVE SWEETS (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "シル・ヴ・プレジデント"														then return "LOVE SWEETS (X)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "灼熱 Pt.2 Long Train Running"										then return "DANCING RAYS (X)"
 	
 ----------------------------------------------------------------------------- OTHER SONGS 
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Re:Elemental Creation"												then return "BOOM WHITE "..Boom
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Haryu"																then return "CYBER (X2)"
 	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "dEKA"																then return "CRYSTALDIUM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "U.N. Owen Was Her"													then return "BOOM BOOM BOOM (X)"
+	elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "You Goddamn Fish"													then return "BOOM LIGHT (X2)"
 	
 ----------------------------------------------------------------------------- DON'T TOUCH THIS 
 	else
