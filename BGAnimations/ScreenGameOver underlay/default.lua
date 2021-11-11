@@ -19,9 +19,6 @@ t[#t+1] = Def.ActorFrame {
 	LoadActor( "thanks" )..{
 		InitCommand=cmd(zoomto,SCREEN_WIDTH,SCREEN_HEIGHT;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;blend,'BlendMode_NoEffect';zwrite,true;zoomx,1.3;zoomy,1.8;linear,5.9;zoomy,1.5;zoomx,1;);
 	};
-	--[[LoadActor( "konami" )..{
-		InitCommand=cmd(x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-217;blend,'BlendMode_NoEffect';zwrite,true;clearzbuffer,false;);
-	};]]
 	Def.Quad{
 		InitCommand=cmd(Center;FullScreen;diffusecolor,color("White");ztest,true);
 	};

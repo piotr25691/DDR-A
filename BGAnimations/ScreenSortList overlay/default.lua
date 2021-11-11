@@ -12,6 +12,7 @@ local sortorders = {
 	"EasyMeter",
 	"Recent",
 	"Length",
+	"Preferred",
 }
 local mw = SCREENMAN:GetTopScreen():GetChild("MusicWheel")
 local curIndex = 1;

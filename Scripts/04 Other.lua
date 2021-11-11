@@ -6,19 +6,6 @@ function ThemeManager:GetAbsolutePath(sPath, optional)
 	return sFinPath
 end
 
-
-function cutin(player)
-	local ShowDancingCharacters = GetUserPrefB("FirstReMIX_ShowDancingCharacters");
-	local character = GAMESTATE:GetCharacter(player):GetCharacterID();
-	if not ShowDancingCharacters then
-		return false;
-	elseif character == "Afro" or character == "Lady" or character == "Emi" then
-		return true;
-	else
-		return false;
-	end;
-end;
-
 function jacketpath(text, so)
 	if not text or text =="" then
 		return nil

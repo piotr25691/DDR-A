@@ -364,3 +364,55 @@ function GetCustomScoreMode()
 	end;
 	return customscore;
 end;
+
+-- Normal Score
+function GetNormalScore(maxsteps,score,player)
+	local s;
+	local w1 = score:GetTapNoteScore('TapNoteScore_W1');
+	local w2 = score:GetTapNoteScore('TapNoteScore_W2');
+	local w3 = score:GetTapNoteScore('TapNoteScore_W3');
+	local hd = score:GetHoldNoteScore('HoldNoteScore_Held');
+	if PREFSMAN:GetPreference("AllowW1")~="AllowW1_Everywhere" then
+			w1 = w1+w2;
+			w2 = 0;
+		end;
+		s = (math.round( (w1 + w2 + w3/2+hd)*100000/maxsteps-(w2 + w3))*10);
+	return s;
+end;
+
+-- Evaluation Score
+function GetEvaScore(maxsteps,pss,pn)
+	local score;
+	local w1=pss:GetTapNoteScores('TapNoteScore_W1');
+	local w2=pss:GetTapNoteScores('TapNoteScore_W2');
+	local w3=pss:GetTapNoteScores('TapNoteScore_W3');
+	local hd=pss:GetHoldNoteScores('HoldNoteScore_Held');
+	if PREFSMAN:GetPreference("AllowW1")~="AllowW1_Everywhere" then
+			w1=w1+w2;
+			w2=0;
+		end;
+		score = (math.round( (w1 + w2 + w3/2+hd)*100000/maxsteps-(w2 + w3))*10);
+	return score;
+end;
+
+-- Gameplay EX
+function ChangeEXScore(params)
+	local player = params.Player;
+	local ret = 0;
+	local pss = STATSMAN:GetCurStageStats():GetPlayerStageStats(player);
+	local w1 = pss:GetTapNoteScores('TapNoteScore_W1');
+	local w2 = pss:GetTapNoteScores('TapNoteScore_W2');
+	local w3 = pss:GetTapNoteScores('TapNoteScore_W3');
+	local hd = pss:GetHoldNoteScores('HoldNoteScore_Held');
+	if params.HoldNoteScore == 'HoldNoteScore_Held' then
+		hd = hd+1;
+	elseif params.TapNoteScore == 'TapNoteScore_W1' then
+		w1 = w1+1;
+	elseif params.TapNoteScore == 'TapNoteScore_W2' then
+		w2 = w2+1;
+	elseif params.TapNoteScore == 'TapNoteScore_W3' then
+		w3 = w3+1;
+	end;
+	ret = w1*3 + w2*2 + w3*1 + hd*3;
+	return ret;
+end;

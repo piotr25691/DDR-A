@@ -26,32 +26,6 @@ function SelectMusicOrCourse()
 	end
 end
 
-Line = {
-	OptionNumber = function() 
-		if GetUserPref("OptionRowScreenCharacters")=='OFF' then
-			return "1,2,3,4,5,6,7,8,9,10,11,12,13"
-		else
-			return "1,2,3,4,5,6,7,8,9,10,11,12"
-		end
-	end;
-	
-	LineP = function()
-		if GetUserPref("OptionRowScreenCharacters")=='OFF' then
-			return "list,Characters"
-		else
-			return "list,Risky"
-		end;
-	end;
-}
-
-function Boom()
-	if GetUserPref("OptionRowBoom")=='2014' then
-		return "(2014)" 
-	else
-		return "(A)"
-	end;
-end;
-
 -- functions used for Routine mode
 function IsRoutine()
 	return GAMESTATE:GetCurrentStyle() and GAMESTATE:GetCurrentStyle():GetStyleType() == "StyleType_TwoPlayersSharedSides"
@@ -223,14 +197,6 @@ Branch = {
 			return "ScreenStageInformation"
 		else
 			return "ScreenStageInformation"
-		end
-	end,
-	
-	CharacterSelect = function()
-		if GetUserPref("OptionRowScreenCharacters")=='OFF' then
-			return "ScreenSelectStyle"
-		else
-			return "ScreenSelectCharacters"
 		end
 	end,
 	

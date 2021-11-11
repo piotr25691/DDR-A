@@ -17,18 +17,22 @@ local function base_x()
     end
 end
 
-
 local rownames;
-	
 	if GetUserPref("OptionRowScreenCharacters")=='OFF' then
 		if GAMESTATE:IsExtraStage() or GAMESTATE:IsExtraStage2() then
 			rownames = {
 				"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter"
 			};
 		else
-			rownames = {
-				"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge","Characters"
-		};
+			if GetUserPref("OptionRowOptionStage")=='OFF' then
+				rownames = {
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge","Characters"
+				};
+			else	
+				rownames = {
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","SelectStage","Gauge","Characters"
+				};
+			end;
 		end;
 	else
 		if GAMESTATE:IsExtraStage() or GAMESTATE:IsExtraStage2() then
@@ -36,11 +40,16 @@ local rownames;
 				"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter"
 			};
 		else
-			rownames = {
-				"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge"
-			};
+			if GetUserPref("OptionRowOptionStage")=='OFF' then
+				rownames = {
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge"
+				};
+			else	
+				rownames = {
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","SelectStage","Gauge"
+				};
+			end;
 		end;
-		
 	end;
 
 local function GetOptionName(screen, idx)
@@ -208,7 +217,6 @@ local function MakeRow(rownames, idx)
                         self:settext(ChoiceText);
 					elseif name == "NoteSkins" then
 						self:settext(NOTESKIN:GetNoteSkinNames()[choice+1])
-					--------- AQUÍ
 					elseif name == "Characters" then
 						local chars = FILEMAN:GetDirListing("/Characters/", true, false)
 						for i=1,#chars do

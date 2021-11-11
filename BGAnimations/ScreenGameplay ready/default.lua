@@ -14,6 +14,7 @@ local ss = 	song == "NEPHILIM DELTA" or
 			song == "TRIP MACHINE EVOLUTION" or 
 			song == "Pluto Relinquish" or 
 			song == "MAX.(period)" or
+			song == "AI" or
 			song == "DEAD END (\"GROOVE RADAR\" Special)";
 			
 return Def.ActorFrame {

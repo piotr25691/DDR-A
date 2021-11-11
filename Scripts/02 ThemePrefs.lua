@@ -15,12 +15,6 @@ local Prefs =
 		Choices = {"Japanese","English", "Korean"},
 		Values = {"jp","en","kor"}
 	},
-	CharacterSelect =
-	{
-		Default = "OPTIONS",
-		Choices = {"OPTIONS","SCREEN",},
-		Values = {"OPTIONS","SCREEN",}
-	},
 }
 
 ThemePrefs.InitAll(Prefs)

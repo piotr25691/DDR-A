@@ -565,6 +565,34 @@ function AppearancePlusMain(pn)
 	
 end;
 
+local button = {}
+local function AppearancePlusSound(event)
+	local pn= event.PlayerNumber
+	if event.type ~= "InputEventType_FirstPress" then return end
+	if button[event.button] and GAMESTATE:IsPlayerEnabled(pn) then
+		button[event.button]:play()
+	end
+end
+
+for pn in ivalues(GAMESTATE:GetHumanPlayers()) do
+	local PlayerUID = PROFILEMAN:GetProfile(pn):GetGUID()
+	local MyValue = ReadOrCreateAppearancePlusValueForPlayer(PlayerUID,MyValue);
+		if MyValue == "Hidden+" or MyValue == "Sudden+" or MyValue == "Hidden+&Sudden+" then
+			t[#t+1] = Def.ActorFrame{
+			Def.Sound{
+				File = THEME:GetPathS("","HiddenPlusShow"), InitCommand = function(self)
+					button.Start = self
+				end
+			},
+			Def.ActorFrame{
+				OnCommand= function(self)
+					SCREENMAN:GetTopScreen():AddInputCallback(AppearancePlusSound)
+				end
+			}
+		};
+	end;
+end;
+
 
 retrieveMeterType();
  
