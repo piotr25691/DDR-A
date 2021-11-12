@@ -23,13 +23,13 @@ function LoadPlayerStuff(Player)
 			InitCommand=function(self)
 				(cmd(shadowlength,0;zoomy,0))(self);
 			end;
-			OnCommand=cmd(sleep,0.3;linear,0.3;zoomy,1;);
+			OnCommand=cmd(linear,0.3;zoomy,1;);
 		};
 	LoadActor( THEME:GetPathG("","ScreenSelectProfile/BG02") ) .. {
 			InitCommand=function(self)
 				(cmd(y,-40;zoomy,0))(self);
 			end;
-			OnCommand=cmd(sleep,0.3;linear,0.3;zoomy,1;);
+			OnCommand=cmd(linear,0.3;zoomy,1;);
 		};
 	};
 	t[#t+1] =Def.ActorFrame{
@@ -37,7 +37,7 @@ function LoadPlayerStuff(Player)
       InitCommand=function(self)
         (cmd(shadowlength,0))(self);
       end;
-      OnCommand=cmd(y,0;sleep,0.3;linear,0.3;y,-238;);
+      OnCommand=cmd(y,0;linear,0.3;y,-238;);
       OffCommand=cmd(linear,0.1;y,0;sleep,0;diffusealpha,0);
 	  LoadActor( THEME:GetPathG("","ScreenSelectProfile/sceawi_frame_top") )..{
         InitCommand=cmd(valign,1);
@@ -58,7 +58,7 @@ function LoadPlayerStuff(Player)
       InitCommand=function(self)
         (cmd(shadowlength,0))(self);
       end;
-      OnCommand=cmd(y,0;sleep,0.3;linear,0.3;y,224;);
+      OnCommand=cmd(y,0;linear,0.3;y,224;);
       OffCommand=cmd(linear,0.1;y,0;sleep,0;diffusealpha,0);
       LoadActor( THEME:GetPathG("","ScreenSelectProfile/sceawi_frame_bottom") )..{
         InitCommand=cmd(valign,0);

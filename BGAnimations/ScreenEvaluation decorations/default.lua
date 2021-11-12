@@ -4,18 +4,6 @@ local t = Def.ActorFrame{
     StandardDecorationFromFileOptional("Footer","Footer");
 }
 
-if GAMESTATE:HasEarnedExtraStage() then
-t[#t+1] = LoadActor( THEME:GetPathS("","_silent") ) .. {
-		PlayCommand=cmd(play);
-		OnCommand=cmd(queuecommand,"Play");
-	};
-else
-t[#t+1] = LoadActor( THEME:GetPathS("","_systembgm3") ) .. {
-		OnCommand=cmd(sleep,2.4;queuecommand,"Play");
-		PlayCommand=cmd(play);
-	};
-end;
-
 --P1
 for _,pn in pairs(GAMESTATE:GetEnabledPlayers()) do
 	t[#t+1] = Def.ActorFrame{

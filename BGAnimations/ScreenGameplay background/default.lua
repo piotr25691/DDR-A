@@ -120,24 +120,23 @@ end
 
 
 	------- JACKET WRITER -------
-	local Animation;
-	
 	if string.match(DanceStage, "VIDEO") or DanceStage == "BIG SCREEN (X2)" then 
 		Animation = "/DanceStages/"..DanceStage.."/Animacion.ini"
 	elseif string.match(DanceStage, "REPLICANT") then 
 		Animation = "/DanceStages/"..DanceStage.."/Fondo.ini"
 	end;
 	
+	if GAMESTATE:GetCurrentSong():HasJacket() then
+		Graphic = GAMESTATE:GetCurrentSong():GetJacketPath()
+	elseif GAMESTATE:GetCurrentSong():HasBackground() then
+		Graphic = GAMESTATE:GetCurrentSong():GetBackgroundPath()
+	end;
+	
 	local file = RageFileUtil.CreateRageFile()
 
-	if GAMESTATE:GetCurrentSong():HasJacket() then
+	if string.match(DanceStage, "VIDEO") or string.match(DanceStage, "REPLICANT") or DanceStage == "BIG SCREEN (X2)" then 
 		file:Open(Animation,2)
-		file:Write("[AnimatedTexture]\nFrame0000=../.."..GAMESTATE:GetCurrentSong():GetJacketPath().."\nDelay0000=1")
-		file:Close()
-		file:destroy()
-	elseif GAMESTATE:GetCurrentSong():HasBackground() then
-		file:Open(Animation,2)
-		file:Write("[AnimatedTexture]\nFrame0000=../.."..GAMESTATE:GetCurrentSong():GetBackgroundPath().."\nDelay0000=1")
+		file:Write("[AnimatedTexture]\nFrame0000=../.."..Graphic.."\nDelay0000=1")
 		file:Close()
 		file:destroy()
 	end;

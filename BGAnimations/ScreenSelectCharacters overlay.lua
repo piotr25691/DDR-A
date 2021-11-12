@@ -72,8 +72,8 @@ local Controller = Def.ActorFrame{
 };
 
 local SoundBank = Def.ActorFrame{ OnCommand=function(self) SBank = self end;
-	Def.Sound{Name="StartSound",File=THEME:GetPathS("", "Common start")},
-	Def.Sound{Name="MoveChoice",File=THEME:GetPathS("", "Profile_Move")},
+	Def.Sound{Name="StartSound",File=THEME:GetPathS("Common","start")},
+	Def.Sound{Name="MoveChoice",File=THEME:GetPathS("Profile","Move")},
 	Def.Sound{Name="CancelSound",File=THEME:GetPathS("Common","cancel")},
 };
 

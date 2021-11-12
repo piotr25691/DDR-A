@@ -24,7 +24,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
 			InitCommand=function(self)
 				(cmd(shadowlength,0;zoomy,0))(self);
 			end;
-			OnCommand=cmd(sleep,0.3;linear,0.3;zoomy,1;);
+			OnCommand=cmd(linear,0.3;zoomy,1;);
 			OffCommand=function(self)
 				if GetUserPref("OptionRowScreenCharacters")=='OFF' then
 					if IsJoinFrame then
@@ -39,7 +39,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
 			InitCommand=function(self)
 				(cmd(y,-40;zoomy,0))(self);
 			end;
-			OnCommand=function (s) s:sleep(0.3):linear(0.3):zoomy(1) end,
+			OnCommand=cmd(linear,0.3;zoomy,1;);
 			OffCommand=function(self)
 				if GetUserPref("OptionRowScreenCharacters")=='OFF' then	
 					if IsJoinFrame then
@@ -107,7 +107,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
       InitCommand=function(self)
         (cmd(shadowlength,0))(self);
       end;
-      OnCommand=cmd(y,0;sleep,0.3;linear,0.3;y,-238;);
+      OnCommand=cmd(y,0;linear,0.3;y,-238;);
       OffCommand=function(self)
 		if GetUserPref("OptionRowScreenCharacters")=='OFF' then	
 			if IsJoinFrame then
@@ -136,7 +136,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
       InitCommand=function(self)
         (cmd(shadowlength,0))(self);
       end;
-      OnCommand=cmd(y,0;sleep,0.3;linear,0.3;y,224;);
+      OnCommand=cmd(y,0;linear,0.3;y,224;);
       OffCommand=function(self)
 			if GetUserPref("OptionRowScreenCharacters")=='OFF' then	
 				if IsJoinFrame then
@@ -389,7 +389,6 @@ local t = Def.ActorFrame {
 		Def.ActorFrame {
 			Name = 'P1Frame';
 			InitCommand=cmd(x,SCREEN_CENTER_X-320;y,SCREEN_CENTER_Y+14);
-      OnCommand=cmd(zoomx,0;linear,0.2;zoomx,1);
 			OffCommand=cmd();
 			PlayerJoinedMessageCommand=function(self,param)
 				if param.Player == PLAYER_1 then
@@ -401,7 +400,6 @@ local t = Def.ActorFrame {
 		Def.ActorFrame {
 			Name = 'P2Frame';
 			InitCommand=cmd(x,SCREEN_CENTER_X+320;y,SCREEN_CENTER_Y+14);
-      OnCommand=cmd(zoomx,0;linear,0.2;zoomx,1);
 			OffCommand=cmd();
 			PlayerJoinedMessageCommand=function(self,param)
 				if param.Player == PLAYER_2 then
@@ -414,13 +412,13 @@ local t = Def.ActorFrame {
 		LoadActor( THEME:GetPathS("Common","start") )..{
 			StartButtonMessageCommand=cmd(play);
 		};
-		LoadActor( THEME:GetPathS("","Profile_start") )..{
+		LoadActor( THEME:GetPathS("Profile","start") )..{
 			StartButtonMessageCommand=cmd(play);
 		};
 		LoadActor( THEME:GetPathS("Common","cancel") )..{
 			BackButtonMessageCommand=cmd(play);
 		};
-		LoadActor( THEME:GetPathS("","Profile_Move") )..{
+		LoadActor( THEME:GetPathS("Profile","Move") )..{
 			DirectionButtonMessageCommand=cmd(play);
 		};
 	};
