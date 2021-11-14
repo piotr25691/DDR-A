@@ -8,6 +8,8 @@ local t = Def.ActorFrame{};
 		CharacterSize1=0.67
 	elseif 	string.match(Character_1, "Baby") 	then
 		CharacterSize1=0.4
+	elseif 	string.match(Character_1, "Julio") 	then
+		CharacterSize1=0.8
 	elseif 	string.match(Character_1, "Rena") 	then
 		CharacterSize1=0.9
 	elseif 	string.match(Character_1, "PiX")	then
@@ -30,8 +32,10 @@ local t = Def.ActorFrame{};
 		CharacterSize2=0.67
 	elseif 	string.match(Character_2, "Baby")	then
 		CharacterSize2=0.4
-	elseif 	string.match(Character_2, "Rena")	then
-		CharacterSize2=0.9
+	elseif 	string.match(Character_2, "Julio") 	then
+		CharacterSize2=0.8
+	elseif 	string.match(Character_2, "Rena") 	then
+		CharacterSize1=0.9
 	elseif 	string.match(Character_2, "PiX")	then
 		CharacterSize2=0.38
 	elseif 	string.match(Character_2, "Jun") 	then
@@ -58,6 +62,8 @@ local t = Def.ActorFrame{};
 		string.match(Character_1, "Emi") or
 		string.match(Character_1, "Zukin") or
 		string.match(Character_1, "Jun") or
+		string.match(Character_1, "Ruby") or
+		string.match(Character_1, "Bonnie") or
 		string.match(Character_1, "Janet")
 	then
 		Char1_Gen="F"
@@ -67,6 +73,7 @@ local t = Def.ActorFrame{};
 		string.match(Character_1, "Baby") or
 		string.match(Character_1, "Victory") or
 		string.match(Character_1, "Gus") or
+		string.match(Character_1, "Julio") or
 		string.match(Character_1, "Dred")
 	then
 		Char1_Gen="M"
@@ -85,6 +92,8 @@ local t = Def.ActorFrame{};
 		string.match(Character_2, "Emi") or
 		string.match(Character_2, "Zukin") or
 		string.match(Character_2, "Jun") or
+		string.match(Character_2, "Ruby") or
+		string.match(Character_2, "Bonnie") or
 		string.match(Character_2, "Janet")
 	then
 		Char2_Gen="F"
@@ -94,6 +103,7 @@ local t = Def.ActorFrame{};
 		string.match(Character_2, "Baby") or
 		string.match(Character_2, "Victory") or
 		string.match(Character_2, "Gus") or
+		string.match(Character_2, "Julio") or
 		string.match(Character_2, "Dred")
 	then
 		Char2_Gen="M"

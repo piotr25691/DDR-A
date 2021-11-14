@@ -107,7 +107,13 @@ local function TestActorScroller()
 	local t = Def.ActorFrame{}
 	for value in ivalues(CharList) do
 		local Result = Def.ActorFrame{
-		
+			LoadFont("_sveningsson Bold 60px") ..{
+				OnCommand=function(self)
+					self:zoom(0.27):y(SCREEN_TOP-215):shadowlength(1):diffuse(Color.White):maxwidth(500)
+					self:settext(value:GetDisplayName())
+				end;
+				OffCommand=function(s) s:linear(0.2):diffusealpha(0) end,
+			};
 			Def.Model{
 				Materials = value:GetModelPath();
 				Meshes = value:GetModelPath();
@@ -119,7 +125,9 @@ local function TestActorScroller()
 				elseif string.find( value:GetDisplayName(), "Rinon") then
 					self:zoom(8.7)
 				elseif string.find( value:GetDisplayName(), "Rena") then
-					self:zoom(12)
+					self:zoom(12)   
+				elseif string.find( value:GetDisplayName(), "Julio") then
+					self:zoom(11)
 				elseif string.find( value:GetDisplayName(), "PiX") then
 					self:zoom(5)
 				elseif string.find( value:GetDisplayName(), "[HP]") then
@@ -133,13 +141,6 @@ local function TestActorScroller()
 					self:zoom(13) 
 				end;
 				end,
-			OffCommand=function(s) s:linear(0.2):diffusealpha(0) end,
-			};
-			LoadFont("_sveningsson Bold 60px") ..{
-			OnCommand=function(self)
-				self:zoom(0.27):y(SCREEN_TOP-215):shadowlength(1):diffuse(Color.White):maxwidth(500)
-				self:settext(value:GetDisplayName())
-			end;
 			OffCommand=function(s) s:linear(0.2):diffusealpha(0) end,
 			};
 		};
