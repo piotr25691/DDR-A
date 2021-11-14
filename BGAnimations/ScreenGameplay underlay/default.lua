@@ -9,9 +9,9 @@ local x_table = {
 
 local Video = FILEMAN:DoesFileExist(GAMESTATE:GetCurrentSong():GetMusicPath():sub(1, -4).."avi") == false and FILEMAN:DoesFileExist(GAMESTATE:GetCurrentSong():GetMusicPath():sub(1, -4).."mp4") == false 
 
-if GetUserPref("OptionRowCutin")=='ON' then
-	for _, pn in ipairs(GAMESTATE:GetEnabledPlayers()) do
-		if Video then
+for _, pn in ipairs(GAMESTATE:GetEnabledPlayers()) do
+	if Video then
+		if GetUserPref("OptionRowCutin")=='ON' then
 			if FILEMAN:DoesFileExist("/Characters/"..GAMESTATE:GetCharacter(pn):GetDisplayName().."/Cut-In") then
 				t[#t+1] = LoadActor("Cutin", pn)..{
 					OnCommand=cmd(setsize,200,SCREEN_HEIGHT);
@@ -34,8 +34,8 @@ if GetUserPref("OptionRowCutin")=='ON' then
 				};
 			end;
 		end;
-		t[#t+1] = LoadActor("ScreenFilter",pn);	
 	end;
+	t[#t+1] = LoadActor("ScreenFilter",pn);	
 end;
 
 t[#t+1] = LoadActor("ScreenGameplay Danger");
