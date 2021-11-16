@@ -28,6 +28,44 @@ Give the respective credits if you are going to upload videos in YouTube, Twitch
    the gameplay, GuideLines, ShockArrows (Mines) Increments combo, etc.
 8) ⚠️ If you are going to use D3D, you might get a Crash Issue, sometimes the theme forces to crash when your are using the Textures Resolution in 2048. 
        If this happens, go to "Stepmania options/"Graphics/Sound Options"/Textures Resolution." turn the Textures Resolution in 1024. If you use openGL, don't do this step.⚠️
+9)  You have to call your groups like this to have the ArcadeGroup in ScreenSelectMusic:
+ 
+• DDR 1st
+
+• DDR 2ndMIX
+
+• DDR 3rdMIX
+
+• DDR 4thMIX
+
+• DDR 5thMIX
+
+• DDRMAX
+
+• DDRMAX2
+
+• DDR EXTREME
+
+• DDR SuperNOVA
+
+• DDR SuperNOVA 2 
+
+• DDR X
+
+• DDR X2
+
+• DDR X3 VS 2ndMIX
+
+• DDR 2013
+
+• DDR 2014
+
+• DDR A
+
+• DDR A20
+
+• DDR A20 PLUS
+
 
 # ESPAÑOL
 
@@ -56,3 +94,41 @@ Da los créditos correspondientes si tu vas a subir videos a YouTube, Twitch, Fa
    Cut-Ins durante el gameplay, Lineas de guía (GuideLines), si quieres que los ShockArrows (minas) incrementen el combo, etc.
 8) ⚠️ SI VAS A USAR EL PROCESADOR D3D, puede que tengas un problema con las texturas si las tienes activadas en 2048, a veces Stepmania suele dar Crash. 
       Si esto pasa, ve a "Stepmania options/"Graphics/Sound Options"/Textures Resolution." y cámbialos a 1024. Si estás usando openGL no hagas esto.⚠️
+9)  Tienes que renombrar a tus grupos para tener el ArcadeGroup en ScreenSelectMusic:
+ 
+• DDR 1st
+
+• DDR 2ndMIX
+
+• DDR 3rdMIX
+
+• DDR 4thMIX
+
+• DDR 5thMIX
+
+• DDRMAX
+
+• DDRMAX2
+
+• DDR EXTREME
+
+• DDR SuperNOVA
+
+• DDR SuperNOVA 2 
+
+• DDR X
+
+• DDR X2
+
+• DDR X3 VS 2ndMIX
+
+• DDR 2013
+
+• DDR 2014
+
+• DDR A
+
+• DDR A20
+
+• DDR A20 PLUS
+
