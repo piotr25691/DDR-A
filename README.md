@@ -1,6 +1,6 @@
 Another Inori's Theme Edit
 
-// ENGLISH
+# ENGLISH
 
 PLEASE DOWNLOAD THE DANCING CHARACTERS AND STAGES!! IT'S VERY IMPORTANT!!! WITHOUT THEM THE THEME
 WON'T WORK!!
@@ -29,7 +29,7 @@ Give the respective credits if you are going to upload videos in YouTube, Twitch
 8) ⚠️ If you are going to use D3D, you might get a Crash Issue, sometimes the theme forces to crash when your are using the Textures Resolution in 2048. 
        If this happens, go to "Stepmania options/"Graphics/Sound Options"/Textures Resolution." turn the Textures Resolution in 1024. If you use openGL, don't do this step.⚠️
 
-//ESPAÑOL
+# ESPAÑOL
 
 POR FAVOR DESCARGA LOS DANCING CHARACTERS Y STAGES!! ES MUY IMPORTANTE!!! SIN ELLOS EL TEMA NO FUNCIONARÁ!!!
 
