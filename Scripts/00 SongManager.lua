@@ -1113,6 +1113,7 @@ local Boom = Boom()
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ハラショー！おにぎりサーカス団☆"											then return "LOVE SWEETS (X)"				--Khorosho! Onigiri circus dan
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "春を告げる"														then return "BOOM BOOM BOOM (X)"			--Haru wo tsugeru
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "叛逆のディスパレート"													then return "BOOM BOOM BOOM (X)"			--Hangyaku no disparate
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ほしのつくりかた"														then return "CRYSTALDIUM (X)"				--Hoshi no tsukurikata
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "勇猛無比"															then return "BOOM BOOM BOOM (X)"			--YU-MOU-MU-HI
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ユメブキ"															then return "CYBER (X2)"					--Yumebuki
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ロキ(w/緒方恵美)"													then return "BOOM BOOM BOOM (X)"			--Roki (Megumi Ogata)
@@ -1183,6 +1184,7 @@ local Boom = Boom()
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "take me higher" 												then return "BOOM LIGHT (X2)"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Taking It To The Sky (PLUS step)"								then return "BOOM LIGHT (X2)"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Together Going My Way"											then return "DANCING RAYS (X)"
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Triple Cross"													then return "BOOM LIGHT (X2)"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Twinkle Wonderland" 											then return "BOOM LIGHT (X2)"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Uh-Oh"															then return "LOVE SWEETS (X)"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Vertigo"														then return "CYBER (X2)"

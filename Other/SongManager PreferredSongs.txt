@@ -28,6 +28,7 @@ DDR A20 PLUS\Hana wa oritashi kozue wa takashi
 DDR A20 PLUS\Khorosho! Onigiri circus dan
 DDR A20 PLUS\Haru wo tsugeru
 DDR A20 PLUS\Hangyaku no disparate
+DDR A20 PLUS\Hoshi no tsukurikata
 DDR A20 PLUS\YU-MOU-MU-HI
 DDR A20 PLUS\Yumebuki
 DDR A20 PLUS\Roki (Megumi Ogata)
@@ -98,6 +99,7 @@ DDR A20 PLUS\Sword of Vengeance
 DDR A20 PLUS\take me higher
 DDR A20 PLUS\Taking It To The Sky (PLUS step)
 DDR A20 PLUS\Together Going My Way
+DDR A20 PLUS\Triple Cross
 DDR A20 PLUS\Twinkle Wonderland
 DDR A20 PLUS\Uh-Oh
 DDR A20 PLUS\Vertigo
