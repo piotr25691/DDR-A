@@ -49,8 +49,10 @@ Por favor descarga el archivo Region.lua, sin él el tema no va a funcionar.
 7) ⚠️ SI VAS A USAR EL PROCESADOR D3D, puede que tengas un problema con las texturas si las tienes activadas en 2048, a veces Stepmania suele dar Crash. 
       Si esto pasa, ve a "Stepmania options/"Graphics/Sound Options"/Textures Resolution." y cámbialos a 1024. Si estás usando openGL no hagas esto.⚠️
 
-# RECOMENDATIONS / RECOMENDACIONES
-1)  You have to call your groups like this to have the ArcadeGroup in ScreenSelectMusic: / Tienes que renombrar a tus grupos de esta forma para tener el ArcadeGroup en ScreenSelectMusic:
+ # RECOMENDATIONS / RECOMENDACIONES
+• (ENGLISH) You have to call your groups like this to have the ArcadeGroup in ScreenSelectMusic:
+
+• (ESPAÑOL) Tienes que renombrar a tus grupos de esta forma para tener el ArcadeGroup en ScreenSelectMusic:
  
 • 01 - DDR 1st
 
@@ -90,9 +92,10 @@ Por favor descarga el archivo Region.lua, sin él el tema no va a funcionar.
 
 # NOTES / NOTAS
 
-1) GrooveRadar with DDR A songs won't appear, this happens because the GrooveRadar is still in progress with DDR A Songs
-1) El GrooveRadar con las canciones del DDR A no va a aparecer, sigue en proceso de hacer el GrooveRadar para estas canciones
+• (ENGLISH) GrooveRadar with DDR A songs won't appear, this happens because the GrooveRadar is still in progress with DDR A Songs
 
-2) PLEASE ACTIVATE THE OPTION "SelectStage" to see the DanceStages, there is an unknown bug when you don't turn on this option for the first time. You can turn it off later
-2) ACTIVA LA OPCIÓN "SelectStage" para tener los DanceStages, hay un bug raro que no te permite ver los stages si no lo activas por primera vez, luego ya lo puedes desactivar.
+• (ESPAÑOL) El GrooveRadar con las canciones del DDR A no va a aparecer, sigue en proceso de hacer el GrooveRadar para estas canciones
 
+• (ENGLISH) PLEASE ACTIVATE THE OPTION "SelectStage" to see the DanceStages, there is an unknown bug when you don't turn on this option for the first time. You can turn it off later
+
+• (ESPAÑOL) ACTIVA LA OPCIÓN "SelectStage" para tener los DanceStages, hay un bug raro que no te permite ver los stages si no lo activas por primera vez, luego ya lo puedes desactivar.
