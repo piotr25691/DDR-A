@@ -15,7 +15,11 @@ return Def.ActorFrame{
         s:xy(base_x(),SCREEN_TOP+27):draworder(99)
     end,
     Name="LifeFrame",
-    Def.Sprite{
+	-- Def.Sprite{
+        -- Texture="gauge0000_base",
+        -- OnCommand=function(s) s:scaletoclipped(442,31):x(-1):y(10) end,
+	-- };
+	Def.Sprite{
         Texture="stream/gauge0000_gauge_normal (stretch)",
         OnCommand=function(s) s:scaletoclipped(442,30):y(10)
             :MaskDest():ztestmode("ZTestMode_WriteOnFail"):customtexturerect(0,0,1,1)

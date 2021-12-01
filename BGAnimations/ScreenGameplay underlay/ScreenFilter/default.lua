@@ -19,14 +19,19 @@ else
 end;
 
 local Darkness;
-if ScreenFilter == "OFF" then
-	Darkness = 0
-elseif ScreenFilter == "DARK" then
-	Darkness = 0.3
-elseif ScreenFilter == "DARKER" then
-	Darkness = 0.6
-elseif ScreenFilter == "DARKEST" then
-	Darkness = 0.9
+	if ScreenFilter == "OFF"	 then Darkness = 0
+elseif ScreenFilter == "DARK"	 then Darkness = 0.3
+elseif ScreenFilter == "DARKER"	 then Darkness = 0.6
+elseif ScreenFilter == "DARKEST" then Darkness = 0.9
+end;
+
+local function FilterUpdate(self)
+		if (GAMESTATE:GetSongBeat() >= GAMESTATE:GetCurrentSong():GetLastBeat()) 	then self:visible(false);
+	elseif (GAMESTATE:GetSongBeat() >= GAMESTATE:GetCurrentSong():GetFirstBeat()-8) then self:visible(true);
+	else self:visible(false);
+	end;
 end;
 
 return Def.Sprite { InitCommand=function(s) s:x(Position):y(_screen.cy):Load(Filter):diffusealpha(Darkness) end, };
+
+--if GetUserPref("OptionRowBeatBars")=='false' then t.InitCommand=cmd(SetUpdateFunction,FilterUpdate); end;

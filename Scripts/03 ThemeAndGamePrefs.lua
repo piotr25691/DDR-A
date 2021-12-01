@@ -1,9 +1,6 @@
 function Game_ComboUnderField()
 	return GetUserPrefB("OptionRowComboUnderField")
 end
-function Game_JudgmentUnderField()
-	return GetUserPrefB("OptionRowJudgmentUnderField")
-end
 function Game_BeatBars()
 	return GetUserPrefB("OptionRowBeatBars")
 end
@@ -32,39 +29,35 @@ function ScreenGameplay_P2X()
 	end
 end
 
-function OptionRowComboJudgmentUnderField()
+function OptionRowComboUnderField()
 	local t = {
-		Name = "OptionRowComboJudgmentUnderField";
+		Name = "ComboUnderField";
 		LayoutType = "ShowAllInRow";
 		SelectType = "SelectOne";
 		OneChoiceForAllPlayers = true;
 		ExportOnChange = true;
 		Choices = {"Background", "Foreground", };
 		LoadSelections = function(self, list, pn)
-			if ReadPrefFromFile("OptionRowComboUnderField") ~= nil and ReadPrefFromFile("OptionRowJudgmentUnderField") ~= nil then
-				if GetUserPref("OptionRowComboUnderField")=='true' and GetUserPref("OptionRowJudgmentUnderField")=='true' then
+			if ReadPrefFromFile("OptionRowComboUnderField") ~= nil then
+				if GetUserPref("OptionRowComboUnderField")=='true' then
 					list[1] = true
-				elseif GetUserPref("OptionRowComboUnderField")=='false' and GetUserPref("OptionRowJudgmentUnderField")=='false' then
+				elseif GetUserPref("OptionRowComboUnderField")=='false'then
 					list[2] = true
 				else
 					list[1] = true
 				end
 			else
 				WritePrefToFile("OptionRowComboUnderField",true);
-				WritePrefToFile("OptionRowJudgmentUnderField",true);
 				list[1] = true;
 			end;
 		end;
 		SaveSelections = function(self, list, pn)
 			if list[1] then
 				WritePrefToFile("OptionRowComboUnderField",true);
-				WritePrefToFile("OptionRowJudgmentUnderField",true);
 			elseif list[2] then
 				WritePrefToFile("OptionRowComboUnderField",false);
-				WritePrefToFile("OptionRowJudgmentUnderField",false);
 			else
 				WritePrefToFile("OptionRowComboUnderField",true);
-				WritePrefToFile("OptionRowJudgmentUnderField",true);
 			end;
 			THEME:ReloadMetrics();
 		end;
@@ -377,133 +370,37 @@ function OptionRowSpeedDisplay()
 end
 
 function OptionRowStage()
+	local DanceStagesDir = FILEMAN:GetDirListing("/DanceStages/", true, false)
+	DanceStagesDir[#DanceStagesDir+1] = "Joker"
+	DanceStagesDir[#DanceStagesDir+1] = "Joker"
+
 	local t = {
 		Name = "SelectStage";
 		LayoutType = "ShowAllInRow";
 		SelectType = "SelectOne";
 		OneChoiceForAllPlayers = true;
-		ExportOnChange = true;
-		Choices = {"DEFAULT" , "RANDOM", "BOOM BLUE", "BOOM BOOM", "BOOM DARK", "BOOM GREEN", "BOOM LIGHT", "BOOM RED", "BOOM WHITE", "BOOM YELLOW", "CLUB", "CRYSTALDIUM", "CYBER", "DANCING RAYS", "DAWN STREETS", "LOVE SWEETS", "MOVIE STAGE", "REPLICANT DARK BLUE", "REPLICANT DARK PURPLE", "REPLICANT LIGHT BLUE", "REPLICANT LIGHT GRAY", "REPLICANT LIGHT PURPLE", "REPLICANT RED", "VIDEO BLACK", "VIDEO WHITE" };
-		LoadSelections = function(self, list, pn)
-			if ReadPrefFromFile("OptionRowStage") ~= nil then
-				if GetUserPref("OptionRowStage")=='DEFAULT' then
-					list[1] = true
-				elseif GetUserPref("OptionRowStage")=='RANDOM' then
-					list[2] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM BLUE' then
-					list[3] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM BOOM' then
-					list[4] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM DARK' then
-					list[5] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM GREEN' then
-					list[6] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM LIGHT' then
-					list[7] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM RED' then
-					list[8] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM WHITE' then
-					list[9] = true
-				elseif GetUserPref("OptionRowStage")=='BOOM YELLOW' then
-					list[10] = true
-				elseif GetUserPref("OptionRowStage")=='CLUB' then
-					list[11] = true
-				elseif GetUserPref("OptionRowStage")=='CRYSTALDIUM' then
-					list[12] = true
-				elseif GetUserPref("OptionRowStage")=='CYBER' then
-					list[13] = true
-				elseif GetUserPref("OptionRowStage")=='DANCING RAYS' then
-					list[14] = true
-				elseif GetUserPref("OptionRowStage")=='DAWN STREETS' then
-					list[15] = true
-				elseif GetUserPref("OptionRowStage")=='LOVE SWEETS' then
-					list[16] = true
-				elseif GetUserPref("OptionRowStage")=='MOVIE STAGE' then
-					list[17] = true
-				elseif GetUserPref("OptionRowStage")=='REPLICANT DARK BLUE' then
-					list[18] = true
-				elseif GetUserPref("OptionRowStage")=='REPLICANT DARK PURPLE' then
-					list[19] = true
-				elseif GetUserPref("OptionRowStage")=='REPLICANT LIGHT BLUE' then
-					list[20] = true
-				elseif GetUserPref("OptionRowStage")=='REPLICANT LIGHT GRAY' then
-					list[21] = true
-				elseif GetUserPref("OptionRowStage")=='REPLICANT LIGHT PURPLE' then
-					list[22] = true
-				elseif GetUserPref("OptionRowStage")=='REPLICANT RED' then
-					list[23] = true
-				elseif GetUserPref("OptionRowStage")=='VIDEO DARK BLUE' then
-					list[24] = true
-				elseif GetUserPref("OptionRowStage")=='VIDEO LIGHT BLUE' then
-					list[25] = true
-				else
-					list[1] = true
-				end
-			else
-				WritePrefToFile("OptionRowStage",'DEFAULT');
-				list[1] = true;
-			end;
+		ExportOnChange = false;
+		Choices = DanceStagesDir;
+
+		LoadSelections = 
+		function(self, list, pn)
+			local DSLoad=tonumber(GetUserPref("OptionRowStage"))
+			list[DSLoad]=true
 		end;
-		SaveSelections = function(self, list, pn)
-			if list[1] then
-				WritePrefToFile("OptionRowStage",'DEFAULT');
-			elseif list[2] then
-				WritePrefToFile("OptionRowStage",'RANDOM');
-			elseif list[3] then
-				WritePrefToFile("OptionRowStage",'BOOM BLUE');
-			elseif list[4] then
-				WritePrefToFile("OptionRowStage",'BOOM BOOM');
-			elseif list[5] then
-				WritePrefToFile("OptionRowStage",'BOOM DARK');
-			elseif list[6] then
-				WritePrefToFile("OptionRowStage",'BOOM GREEN');
-			elseif list[7] then
-				WritePrefToFile("OptionRowStage",'BOOM LIGHT');
-			elseif list[8] then
-				WritePrefToFile("OptionRowStage",'BOOM RED');
-			elseif list[9] then
-				WritePrefToFile("OptionRowStage",'BOOM WHITE');
-			elseif list[10] then
-				WritePrefToFile("OptionRowStage",'BOOM YELLOW');
-			elseif list[11] then
-				WritePrefToFile("OptionRowStage",'CLUB');
-			elseif list[12] then
-				WritePrefToFile("OptionRowStage",'CRYSTALDIUM');
-			elseif list[13] then
-				WritePrefToFile("OptionRowStage",'CYBER');
-			elseif list[14] then
-				WritePrefToFile("OptionRowStage",'DANCING RAYS');
-			elseif list[15] then
-				WritePrefToFile("OptionRowStage",'DAWN STREETS');
-			elseif list[16] then
-				WritePrefToFile("OptionRowStage",'LOVE SWEETS');
-			elseif list[17] then
-				WritePrefToFile("OptionRowStage",'MOVIE STAGE');
-			elseif list[18] then
-				WritePrefToFile("OptionRowStage",'REPLICANT DARK BLUE');
-			elseif list[19] then
-				WritePrefToFile("OptionRowStage",'REPLICANT DARK PURPLE');
-			elseif list[20] then
-				WritePrefToFile("OptionRowStage",'REPLICANT LIGHT BLUE');
-			elseif list[21] then
-				WritePrefToFile("OptionRowStage",'REPLICANT LIGHT GRAY');
-			elseif list[22] then
-				WritePrefToFile("OptionRowStage",'REPLICANT LIGHT PURPLE');
-			elseif list[23] then
-				WritePrefToFile("OptionRowStage",'REPLICANT RED');
-			elseif list[24] then
-				WritePrefToFile("OptionRowStage",'VIDEO DARK BLUE');
-			elseif list[25] then
-				WritePrefToFile("OptionRowStage",'VIDEO LIGHT BLUE');
-			else
-				WritePrefToFile("OptionRowStage",'DEFAULT');
+
+		SaveSelections = 
+		function(self, list, pn)
+			for number=0,100 do
+				if list[number] then WritePrefToFile("OptionRowStage",number);
+				end;
 			end;
-			THEME:ReloadMetrics();
 		end;
 	};
+
+	
 	setmetatable( t, t );
 	return t;
-end
+end;
 
 function OptionRowOptionStage()
 	local t = {
@@ -534,6 +431,43 @@ function OptionRowOptionStage()
 				WritePrefToFile("OptionRowOptionStage",'ON');
 			else
 				WritePrefToFile("OptionRowOptionStage",'OFF');
+			end;
+			THEME:ReloadMetrics();
+		end;
+	};
+	setmetatable( t, t );
+	return t;
+end
+
+function OptionRowSlowMotion()
+	local t = {
+		Name = "SlowMotion";
+		LayoutType = "ShowAllInRow";
+		SelectType = "SelectOne";
+		OneChoiceForAllPlayers = true;
+		ExportOnChange = true;
+		Choices = {"A" ,"2014" };
+		LoadSelections = function(self, list, pn)
+			if ReadPrefFromFile("OptionRowSlowMotion") ~= nil then
+				if GetUserPref("OptionRowSlowMotion")=='A' then
+					list[1] = true
+				elseif GetUserPref("OptionRowSlowMotion")=='2014' then
+					list[2] = true
+				else
+					list[1] = true
+				end
+			else
+				WritePrefToFile("OptionRowSlowMotion",'A');
+				list[1] = true;
+			end;
+		end;
+		SaveSelections = function(self, list, pn)
+			if list[1] then
+				WritePrefToFile("OptionRowSlowMotion",'A');
+			elseif list[2] then
+				WritePrefToFile("OptionRowSlowMotion",'2014');
+			else
+				WritePrefToFile("OptionRowSlowMotion",'A');
 			end;
 			THEME:ReloadMetrics();
 		end;

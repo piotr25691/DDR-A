@@ -11,7 +11,11 @@ function BothPlayersEnabled()
 end
 
 function ResetCamera()
-    return Camera:rotationy(180):rotationx(0):rotationz(0):Center():z(WideScale(300,400)):addy(10):stopeffect()
+	local cFOV = 90;
+if THEME:GetMetric("Common", "ScreenHeight") >= 1080 then
+	cFOV = 91.3
+end
+    return Camera:fov(cFOV):rotationy(180):rotationx(0):rotationz(0):Center():z(WideScale(300,400)):addy(10):stopeffect()
 end
 
 DEDICHAR = {};
@@ -72,6 +76,18 @@ end
 
 function setenv(name,value) GAMESTATE:Env()[name] = value end
 function getenv(name) return GAMESTATE:Env()[name] end
+
+
+function SlowMotion(self)
+	local SPos = GAMESTATE:GetSongPosition()
+	
+	if not SPos:GetFreeze() and not SPos:GetDelay() then
+		self:SetUpdateRate(1)
+	else
+		self:SetUpdateRate(0.1)
+	end
+end
+
 
 function Boom()
 	if GetUserPref("OptionRowBoom")=='2014' then

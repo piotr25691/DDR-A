@@ -201,7 +201,7 @@ local function MakeRow(rownames, idx)
                             return ""
                         end
                     end
-					if name ~= "NoteSkins" and name ~= "Characters" then
+					if name ~= "NoteSkins" and name ~= "Characters" and name ~= "SelectStage" then
 						--normal option, handle default choice coloring.
                         local ChoiceText = ChoiceToText(choice)
                         --for most options, 0 is the default choice, for Speed it is 3.
@@ -217,15 +217,20 @@ local function MakeRow(rownames, idx)
                         self:settext(ChoiceText);
 					elseif name == "NoteSkins" then
 						self:settext(NOTESKIN:GetNoteSkinNames()[choice+1])
+					elseif name == "SelectStage" then
+						local DanceStagesNames = FILEMAN:GetDirListing("/DanceStages/", true, false)
+						if choice == 0 then
+							self:settext("DEFAULT"):diffuse(color("#06ff06")):diffusetopedge(color("#74ff74"))
+						elseif choice == 1 then
+							self:settext("RANDOM"):diffuse(color("#FFFFFF")):diffusetopedge(color("#FFFFFF"))
+						else						
+						self:settext(DanceStagesNames[choice-1]):diffuse(color("#FFFFFF")):diffusetopedge(color("#FFFFFF"))
+						end
 					elseif name == "Characters" then
 						local chars = FILEMAN:GetDirListing("/Characters/", true, false)
 						for i=1,#chars do
-							chars[i] = chars[i]:gsub("Ace", "A")
-											   :gsub("Rinon Dark", "Dark Rinon")
-											   :gsub(" 2", ":2")
-											   :gsub(" 3", ":3")
-											   :gsub(" 4", ":4")
-						end
+							chars[i] = chars[i]:gsub("Rinon Dark", "Dark Rinon"):gsub(" 2", ":2"):gsub(" 3", ":3"):gsub(" 4", ":4")
+						end						
 						if choice == 0 then
 							self:settext("OFF"):diffuse(color("#06ff06")):diffusetopedge(color("#74ff74"))
 						else
