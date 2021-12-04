@@ -24,6 +24,9 @@ if HasVideo then
 local DanceStagesDir = FILEMAN:GetDirListing("/DanceStages/", true, false)
 local DanceStageSelectedNumber = tonumber(GetUserPref("OptionRowStage"))
 
+if GetUserPref("OptionRowOptionStage")=='OFF' then
+    DanceStageSelectedNumber=1
+end
 
 if DanceStageSelectedNumber == 1 then
     DanceStage = DanceStageSong()
