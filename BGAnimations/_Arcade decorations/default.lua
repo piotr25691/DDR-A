@@ -42,7 +42,7 @@ t[#t+1] = Def.ActorFrame {
 --Frame BG
 	t[#t+1] = Def.ActorFrame {
 		LoadActor( "deeaif_bt_base" )..{
-			OnCommand=cmd(x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-89;zoom,1);
+			OnCommand=cmd(x,SCREEN_CENTER_X;y,SCREEN_BOTTOM-70;zoom,1);
 		};
 	};
 
@@ -50,12 +50,12 @@ t[#t+1] = Def.ActorFrame {
 if GAMESTATE:GetCoinMode() == "CoinMode_Free" then --if 1
 	t[#t+1] = Def.ActorFrame {
 		LoadActor(lang.."_deti_bt_decision_on" )..{
-			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+269);
+			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+286);
 		};
 	};
 	t[#t+1] = Def.ActorFrame {
 		LoadActor(lang.."_deti_bt_decision_off")..{
-			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+269);
+			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+286);
 			OnCommand=cmd(queuecommand,"Anim";);
 			AnimCommand=cmd(linear,1;diffusealpha,1;linear,1;diffusealpha,0;diffusealpha,0;queuecommand,"Anim";);
 		};
@@ -64,12 +64,12 @@ if GAMESTATE:GetCoinMode() == "CoinMode_Free" then --if 1
 	if GAMESTATE:GetCoinMode() == "CoinMode_Home" then --if 2
 	t[#t+1] = Def.ActorFrame {
 		LoadActor(lang.."_deti_bt_decision_on" )..{
-			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+269);
+			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+286);
 		};
 	};
 	t[#t+1] = Def.ActorFrame {
 		LoadActor(lang.."_deti_bt_decision_off")..{
-			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+269);
+			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+286);
 			OnCommand=cmd(queuecommand,"Anim";);
 			AnimCommand=cmd(linear,1;diffusealpha,1;linear,1;diffusealpha,0;diffusealpha,0;queuecommand,"Anim";);
 		};
@@ -78,12 +78,12 @@ if GAMESTATE:GetCoinMode() == "CoinMode_Free" then --if 1
 		if GAMESTATE:EnoughCreditsToJoin() == true then --if 3
 		  t[#t+1] = Def.ActorFrame {
 		LoadActor(lang.."_deti_bt_decision_on" )..{
-			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+269);
+			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+286);
 		};
 	};
 	t[#t+1] = Def.ActorFrame {
 		LoadActor(lang.."_deti_bt_decision_off")..{
-			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+269);
+			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+286);
 			OnCommand=cmd(queuecommand,"Anim";);
 			AnimCommand=cmd(linear,1;diffusealpha,1;linear,1;diffusealpha,0;diffusealpha,0;queuecommand,"Anim";);
 		};
@@ -91,12 +91,12 @@ if GAMESTATE:GetCoinMode() == "CoinMode_Free" then --if 1
 		else
 		t[#t+1] = Def.ActorFrame {
 		LoadActor("deti_bt_coin_on" )..{
-			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+271);
+			OnCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+288);
 		};
 	};
 	t[#t+1] = Def.ActorFrame {
 		LoadActor("deti_bt_coin_off")..{
-			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+271);
+			InitCommand=cmd(zoom,0.85;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+288);
 			OnCommand=cmd(queuecommand,"Anim";);
 			AnimCommand=cmd(linear,1;diffusealpha,1;linear,1;diffusealpha,0;diffusealpha,0;queuecommand,"Anim";);
 		};
