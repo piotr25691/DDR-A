@@ -108,7 +108,7 @@ t[#t+1] = Def.ActorFrame{
       end;
       self:diffusealpha(0):zoomy(0):sleep(0.5):linear(0.3):zoomy(1):diffusealpha(1)
     end;
-    OffCommand=cmd(smooth,0.2;diffusealpha,0);
+    OffCommand=cmd(smooth,0.2;diffusealpha,0;sleep,1;x,SCREEN_LEFT-1000);
     CoinsChangedMessageCommand=function(self)
       self:queuecommand("Set");
     end;
@@ -139,7 +139,7 @@ t[#t+1] = Def.ActorFrame{
       end;
       self:diffusealpha(0):zoomy(0):sleep(0.5):linear(0.3):zoomy(1):diffusealpha(1)
     end;
-    OffCommand=cmd(smooth,0.2;diffusealpha,0);
+    OffCommand=cmd(smooth,0.2;diffusealpha,0;sleep,1;x,SCREEN_LEFT-1000);
     CoinsChangedMessageCommand=function(self)
       self:queuecommand("Set");
     end;
