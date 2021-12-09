@@ -939,6 +939,7 @@ function DanceStageSong()
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Neutrino" 														then return Boom().." BOOM BLUE"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "New Century" 													then return Boom().." BOOM GREEN"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "#OurMemories" 													then return "(X2) BOOM LIGHT"
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "OurMemories" 													then return "(X2) BOOM LIGHT"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "out of focus" 													then return Boom().." BOOM GREEN"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Poochie" 														then return "(X2) CYBER"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "POSSESSION (20th Anniversary Mix)" 								then return Boom().." BOOM BLUE"
@@ -1111,10 +1112,12 @@ function DanceStageSong()
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ハラショー！おにぎりサーカス団☆"											then return "(X) LOVE SWEETS"				--Khorosho! Onigiri circus dan
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "春を告げる"														then return "(X) BOOM BOOM BOOM"			--Haru wo tsugeru
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "叛逆のディスパレート"													then return "(X) BOOM BOOM BOOM"			--Hangyaku no disparate
-		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ほしのつくりかた"														then return "(X) CRYSTALDIUM"				--Hangyaku no disparate
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ほしのつくりかた"														then return "(X) CRYSTALDIUM"				--Hoshi no tsukurikata
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "モノクロモーメント"														then return "(X) CRYSTALDIUM"				--Monochrome moment
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "勇猛無比"															then return "(X) BOOM BOOM BOOM"			--YU-MOU-MU-HI
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ユメブキ"															then return "(X2) CYBER"					--Yumebuki
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ロキ(w/緒方恵美)"													then return "(X) BOOM BOOM BOOM"			--Roki (Megumi Ogata)
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "actualization of self (weaponized)"								then return "(X2) BOOM LIGHT"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "AI"																then return "(X2) CYBER"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ANTI ANTHEM"													then return Boom().." BOOM YELLOW"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Bang Pad(Werk Mix)"												then return "(X2) CYBER"

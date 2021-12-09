@@ -23,6 +23,7 @@ local Darkness;
 elseif ScreenFilter == "DARK"	 then Darkness = 0.3
 elseif ScreenFilter == "DARKER"	 then Darkness = 0.6
 elseif ScreenFilter == "DARKEST" then Darkness = 0.9
+else								  Darkness = 0
 end;
 
 local function FilterUpdate(self)
