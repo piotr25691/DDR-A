@@ -26,7 +26,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
 			end;
 			OnCommand=cmd(linear,0.3;zoomy,1;);
 			OffCommand=function(self)
-				if GetUserPref("OptionRowScreenCharacters")=='OFF' then
+				if GetUserPref("OptionRowScreenCharacters")=='ON' then else
 					if IsJoinFrame then
 						(cmd(linear,0.1;zoomy,0))(self);
 					else
@@ -41,7 +41,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
 			end;
 			OnCommand=cmd(linear,0.3;zoomy,1;);
 			OffCommand=function(self)
-				if GetUserPref("OptionRowScreenCharacters")=='OFF' then	
+				if GetUserPref("OptionRowScreenCharacters")=='ON' then else	
 					if IsJoinFrame then
 						(cmd(linear,0.1;zoomy,0))(self);
 					else
@@ -109,7 +109,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
       end;
       OnCommand=cmd(y,0;linear,0.3;y,-238;);
       OffCommand=function(self)
-		if GetUserPref("OptionRowScreenCharacters")=='OFF' then	
+		if GetUserPref("OptionRowScreenCharacters")=='ON' then else	
 			if IsJoinFrame then
 				(cmd(linear,0.1;y,0;sleep,0;diffusealpha,0))(self);
 			else
@@ -138,7 +138,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
       end;
       OnCommand=cmd(y,0;linear,0.3;y,224;);
       OffCommand=function(self)
-			if GetUserPref("OptionRowScreenCharacters")=='OFF' then	
+			if GetUserPref("OptionRowScreenCharacters")=='ON' then else	
 				if IsJoinFrame then
 					(cmd(linear,0.1;y,0;sleep,0;diffusealpha,0))(self);
 				else
@@ -169,7 +169,7 @@ function LoadPlayerStuff(Player)
 			InitCommand=cmd(zoomy,0;diffuseshift;effectcolor1,Color('White');effectcolor2,color("#A5A6A5"));
 			OnCommand=cmd(x,0;y,-30;sleep,0.5;linear,0.1;zoomx,1;zoomy,1);
 			OffCommand=function(s) 
-				if GetUserPref("OptionRowScreenCharacters")=='OFF' then	
+				if GetUserPref("OptionRowScreenCharacters")=='ON' then else	
 					s:linear(0.1):zoomy(0):diffusealpha(0)
 				end;
 			end,

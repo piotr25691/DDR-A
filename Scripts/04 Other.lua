@@ -55,6 +55,69 @@ function SameDiffSteps(song, pn)
 	end;
 end;
 
+function Boom()
+	if GetUserPref("OptionRowBoom")=='2014' then
+		return "(2014)" 
+	else
+		return "(A)"
+	end
+end
+
+function Screen.CharacterSelect()
+	if GetUserPref("OptionRowScreenCharacters")=='ON' then
+		return "ScreenSelectCharacters"
+		
+	else
+		return "ScreenSelectStyle"
+	end
+end
+
+Line = {
+	OptionNumber = function() 
+		if GetUserPref("OptionRowScreenCharacters")=='ON' then
+			if GetUserPref("OptionRowOptionStage")=='ON' then
+				return "1,2,3,4,5,6,7,8,9,10,11,12,13"
+			else
+				return "1,2,3,4,5,6,7,8,9,10,11,12"
+			end;
+		else
+			if GetUserPref("OptionRowOptionStage")=='ON' then
+				return "1,2,3,4,5,6,7,8,9,10,11,12,13,14"
+			else	
+				return "1,2,3,4,5,6,7,8,9,10,11,12,13" 
+			end;
+		end
+	end;
+	
+	LineT = function()
+		if GetUserPref("OptionRowScreenCharacters")=='OFF' and GetUserPref("OptionRowOptionStage")=='OFF' then
+			return "list,Characters"
+		elseif GetUserPref("OptionRowScreenCharacters")=='OFF' and GetUserPref("OptionRowOptionStage")=='ON' then
+			return "list,Characters"
+		elseif GetUserPref("OptionRowScreenCharacters")=='ON' and GetUserPref("OptionRowOptionStage")=='OFF' then
+			return "list,Risky"
+		elseif GetUserPref("OptionRowScreenCharacters")=='ON' and GetUserPref("OptionRowOptionStage")=='ON' then
+			return "lua,OptionRowStage()"
+		else
+			return "list,Characters"
+		end;
+	end;
+	
+	LineP = function()
+		if GetUserPref("OptionRowScreenCharacters")=='OFF' and GetUserPref("OptionRowOptionStage")=='OFF' then
+			return "list,Risky"
+		elseif GetUserPref("OptionRowScreenCharacters")=='OFF' and GetUserPref("OptionRowOptionStage")=='ON' then
+			return "lua,OptionRowStage()"
+		elseif GetUserPref("OptionRowScreenCharacters")=='ON' and GetUserPref("OptionRowOptionStage")=='OFF' then
+			return "list,Risky"
+		elseif GetUserPref("OptionRowScreenCharacters")=='ON' and GetUserPref("OptionRowOptionStage")=='ON' then
+			return "list,Risky"
+		else
+			return "list,Risky"
+		end;
+	end;
+}
+
 -- �W���b�W���x���ݒ�
 function JudgmentTransformCommand( self, params )
 	local x = 0

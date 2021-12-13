@@ -5265,6 +5265,13 @@ DDR_groove_radar_values= {
 			Hard = {0, 0, 0, 0, 0}, 
 			Challenge = {0, 0, 0, 0, 0},
 		}, 
+		["OurMemories"] = {
+			Beginner = {0, 0, 0, 0, 0}, 
+			Easy = {0, 0, 0, 0, 0}, 
+			Medium = {0, 0, 0, 0, 0}, 
+			Hard = {0, 0, 0, 0, 0}, 
+			Challenge = {0, 0, 0, 0, 0},
+		}, 
 		["out of focus"] = {
 			Beginner = {0, 0, 0, 0, 0}, 
 			Easy = {0, 0, 0, 0, 0}, 
@@ -6284,6 +6291,12 @@ DDR_groove_radar_values= {
 			Medium = {58, 52, 30, 34, 12}, 
 			Hard = {88, 67, 43, 21, 42}, 
 		},
+		["モノクロモーメント"] = {
+			Beginner = {21, 19, 9, 28, 0}, 
+			Easy = {39, 32, 29, 44, 0}, 
+			Medium = {61, 51, 16, 20, 29},  
+			Hard = {86, 71, 38, 29, 100}, 
+		},
 		["勇猛無比"] = {
 			Beginner = {24, 25, 1, 32, 0}, 
 			Easy = {51, 41, 7, 16, 1}, 
@@ -6301,6 +6314,12 @@ DDR_groove_radar_values= {
 			Easy = {33, 25, 16, 24, 0}, 
 			Medium = {52, 43, 27, 22, 9}, 
 			Hard = {72, 56, 29, 34, 39}, 
+		},
+		["actualization of self (weaponized)"] = {
+			Beginner = {27, 21, 14, 15, 0}, 
+			Easy = {50, 43, 21, 35, 4}, 
+			Medium = {61, 72, 20, 21, 39}, 
+			Hard = {136, 108, 27, 23, 109}, 
 		},
 		["AI"] = {
 			Beginner = {28, 23, 3, 23, 0}, 

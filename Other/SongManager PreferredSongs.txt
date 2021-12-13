@@ -29,10 +29,12 @@
 18 - DDR A20 PLUS\Haru wo tsugeru
 18 - DDR A20 PLUS\Hangyaku no disparate
 18 - DDR A20 PLUS\Hoshi no tsukurikata
+18 - DDR A20 PLUS\Monochrome moment
 18 - DDR A20 PLUS\YU-MOU-MU-HI
 18 - DDR A20 PLUS\Yumebuki
 18 - DDR A20 PLUS\Roki (Megumi Ogata)
 
+18 - DDR A20 PLUS\actualization of self (weaponized)
 18 - DDR A20 PLUS\AI
 18 - DDR A20 PLUS\ANTI ANTHEM
 18 - DDR A20 PLUS\Bang Pad(Werk Mix)
@@ -311,7 +313,7 @@
 16 - DDR A\HANDS UP IN THE AIR
 16 - DDR A\Happy
 16 - DDR A\Ha-lle-lu-jah
-16 - DDR A\Help me ERINNNNNN
+16 - DDR A\Help me, ERINNNNNN!!
 16 - DDR A\High School Love
 16 - DDR A\Hillbilly Shoes
 16 - DDR A\Hopeful
@@ -328,7 +330,7 @@
 16 - DDR A\More One Night
 16 - DDR A\Neutrino
 16 - DDR A\New Century
-16 - DDR A\#OurMemories
+16 - DDR A\OurMemories
 16 - DDR A\out of focus
 16 - DDR A\Poochie
 16 - DDR A\POSSESSION (20th Anniversary Mix)
