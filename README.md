@@ -48,8 +48,6 @@ Qué tal chicos! Curilang aquí ahora en Github, por favor sigue las instruccion
 
    https://github.com/Curilang/Region.lua
 
-Por favor descarga el archivo Region.lua, sin él el tema no va a funcionar.
-
 2) MUY IMPORTANTE! Configura tus botones, especialmente "MenuIzquierda, MenuDerecha, MenuArriba, MenuAbajo". Esto es
    para que el tema funcione con los controles correctos.
 3) Por favor, activa la opción "Solo botones dedicados (Only Dedicated buttons)" en las opciones de Stepmania/Input Options/Menu Buttons.
