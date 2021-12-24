@@ -3,9 +3,20 @@
 DDR GRAND PRIX\Kaibutsu
 DDR GRAND PRIX\Gurenge
 DDR GRAND PRIX\Gunjou
+13 - DDR X3 VS 2ndMIX\Connect
+14 - DDR 2013\JoJo ~Sono Chi no Sadame~
+14 - DDR 2013\Tsukematsukeru
 DDR GRAND PRIX\Dry flower
+13 - DDR X3 VS 2ndMIX\Heavy Rotation
+11 - DDR X\PORIRIZUMU
+14 - DDR 2013\Maji LOVE 1000%
 DDR GRAND PRIX\Yoru ni kakeru
+DDR GRAND PRIX\Luka luka night fever
+DDR GRAND PRIX\Renai revolution 21
 DDR GRAND PRIX\Wasurena
+14 - DDR 2013\BRIGHT STREAM
+14 - DDR 2013\LOVE & JOY -Risk Junk MIX-
+12 - DDR X2\resonance
 
 ---DDR A20 PLUS
 
@@ -20,7 +31,7 @@ DDR GRAND PRIX\Wasurena
 18 - DDR A20 PLUS\Kyousui ichika
 18 - DDR A20 PLUS\Koi
 18 - DDR A20 PLUS\Koko kara yoroshiku daisakusen 143
-18 - DDR A20 PLUS\サイカ
+18 - DDR A20 PLUS\Saika
 18 - DDR A20 PLUS\Sakasama Cinderella parade
 18 - DDR A20 PLUS\Zassou tamashii namen na yo!
 18 - DDR A20 PLUS\Shijou no laturia
@@ -31,9 +42,10 @@ DDR GRAND PRIX\Wasurena
 18 - DDR A20 PLUS\Skyclad no kansokusha
 18 - DDR A20 PLUS\Sekai no hate ni yakusoku no gaika wo -DDR Extended Megamix-
 18 - DDR A20 PLUS\Tsuioku no aria
-18 - DDR A20 PLUS\テレキャスタービーボーイ
+18 - DDR A20 PLUS\Telecaster B-boy
 18 - DDR A20 PLUS\Tokyo shinwa
 18 - DDR A20 PLUS\Nadame sukashi Negotiation
+18 - DDR A20 PLUS\No plan days
 18 - DDR A20 PLUS\Norepinephrine
 18 - DDR A20 PLUS\Hana wa oritashi kozue wa takashi
 18 - DDR A20 PLUS\Khorosho! Onigiri circus dan
@@ -51,6 +63,7 @@ DDR GRAND PRIX\Wasurena
 18 - DDR A20 PLUS\ANTI ANTHEM
 18 - DDR A20 PLUS\Bang Pad(Werk Mix)
 18 - DDR A20 PLUS\BITTER CHOCOLATE STRIKER
+18 - DDR A20 PLUS\BLAKE
 18 - DDR A20 PLUS\BRIDAL FESTIVAL !!!
 18 - DDR A20 PLUS\City Never Sleeps
 18 - DDR A20 PLUS\Come Back To Me
@@ -105,6 +118,7 @@ DDR GRAND PRIX\Wasurena
 18 - DDR A20 PLUS\Run The Show
 18 - DDR A20 PLUS\Seize The Day
 18 - DDR A20 PLUS\SHINY DAYS
+18 - DDR A20 PLUS\Shout It Out
 18 - DDR A20 PLUS\Sparkle Smilin'
 18 - DDR A20 PLUS\STEP MACHINE
 18 - DDR A20 PLUS\Step This Way
@@ -115,6 +129,7 @@ DDR GRAND PRIX\Wasurena
 18 - DDR A20 PLUS\Together Going My Way
 18 - DDR A20 PLUS\Triple Cross
 18 - DDR A20 PLUS\Twinkle Wonderland
+18 - DDR A20 PLUS\TYPHON
 18 - DDR A20 PLUS\Uh-Oh
 18 - DDR A20 PLUS\Vertigo
 18 - DDR A20 PLUS\We're so Happy
@@ -496,14 +511,12 @@ DDR GRAND PRIX\Wasurena
 
 ---DanceDanceRevolution(2013)
 
-14 - DDR 2013\Tsukematsukeru
 14 - DDR 2013\Furisodation
 14 - DDR 2013\U-u-uma uma (Speedcake Remix)
 14 - DDR 2013\Okome no oishii takikata, soshite okome wo taberu koto ni yoru sono kouka
 14 - DDR 2013\Orion wo nazoru
 14 - DDR 2013\Colorful Pastel
 14 - DDR 2013\Kiken na kajitsu
-14 - DDR 2013\JoJo ~Sono Chi no Sadame~
 14 - DDR 2013\Zutto Mitsu Meteite (Ryu Remix)
 14 - DDR 2013\Seiten Bon Voyage
 14 - DDR 2013\Sousei Note
@@ -511,7 +524,6 @@ DDR GRAND PRIX\Wasurena
 14 - DDR 2013\Nagisa no koakuma lovely~radio
 14 - DDR 2013\Nijiiro no hana
 14 - DDR 2013\Who Floats
-14 - DDR 2013\Maji LOVE 1000%
 14 - DDR 2013\Meumeupettantan!!
 14 - DDR 2013\Lucky Lucky
 14 - DDR 2013\Rin to shite saku hana no gotoku ~HinaBitter edition~
@@ -526,7 +538,6 @@ DDR GRAND PRIX\Wasurena
 14 - DDR 2013\Beautiful Dream
 14 - DDR 2013\Blew My Mind
 14 - DDR 2013\Bombay Bomb
-14 - DDR 2013\BRIGHT STREAM
 14 - DDR 2013\Burst The Gravity
 14 - DDR 2013\Children of the Beat
 14 - DDR 2013\Chinese Snowy Dance
@@ -544,7 +555,6 @@ DDR GRAND PRIX\Wasurena
 14 - DDR 2013\heron
 14 - DDR 2013\Hoping To Be Good
 14 - DDR 2013\JOKER
-14 - DDR 2013\LOVE & JOY -Risk Junk MIX-
 14 - DDR 2013\Magnetic
 14 - DDR 2013\Mickey Mouse March(Eurobeat Version)
 14 - DDR 2013\Monkey Business
@@ -585,8 +595,6 @@ DDR GRAND PRIX\Wasurena
 13 - DDR X3 VS 2ndMIX\Shizuku
 13 - DDR X3 VS 2ndMIX\Sumidagawa karenka
 13 - DDR X3 VS 2ndMIX\Tenjou no Hoshi -Reimeiki-
-13 - DDR X3 VS 2ndMIX\Connect
-13 - DDR X3 VS 2ndMIX\Heavy Rotation
 13 - DDR X3 VS 2ndMIX\Beautiful Receipt
 13 - DDR X3 VS 2ndMIX\Memeshikute
 13 - DDR X3 VS 2ndMIX\Ryouran Hit Chart
@@ -721,7 +729,6 @@ DDR GRAND PRIX\Wasurena
 12 - DDR X2\Poseidon (kors k mix)
 12 - DDR X2\POSSESSION
 12 - DDR X2\real-high-SPEED
-12 - DDR X2\resonance
 12 - DDR X2\roppongi EVOLVED ver.A
 12 - DDR X2\roppongi EVOLVED ver.B
 12 - DDR X2\roppongi EVOLVED ver.C
@@ -757,7 +764,6 @@ DDR GRAND PRIX\Wasurena
 ---DDR X
 
 11 - DDR X\Suki Melo
-11 - DDR X\PORIRIZUMU
 11 - DDR X\SEKAI HA ODORU
 11 - DDR X\Rin To Shite Saku Hana No Gotoku
 11 - DDR X\Tabibito

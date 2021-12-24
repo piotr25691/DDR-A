@@ -66,7 +66,6 @@ end
 function Screen.CharacterSelect()
 	if GetUserPref("OptionRowScreenCharacters")=='ON' then
 		return "ScreenSelectCharacters"
-		
 	else
 		return "ScreenSelectStyle"
 	end
@@ -117,6 +116,64 @@ Line = {
 		end;
 	end;
 }
+
+function SongName()
+	if 	
+	-- DDR A
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "OurMemories"					or
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "#OurMemories"			
+	then
+		return "#OurMemories"
+	else
+		return GAMESTATE:GetCurrentSong():GetDisplayFullTitle()
+	end
+end
+
+function ArtistName()
+	if 	
+	-- DDR X3 VS 2ndMIX
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "コネクト"							or	-- Connect
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ヘビーローテーション"					or	-- Heavy Rotation
+	--DDR 2013	
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "つけまつける"						or	-- Tsukematsukeru
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ジョジョ～その血の運命～"				or	-- JoJo ~Sono Chi no Sadame~
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "マジLOVE1000%"					or	-- Maji LOVE 1000%
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "BRIGHT STREAM"					or
+	--DDR HOTTEST PARTY
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "HOTTEST PARTY"					or
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "HOTTEST PARTY 2"				or
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "HOTTEST PARTY 3"				or
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "DanceDanceRevolution"			or
+	--DDR GRAND PRIX	
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "怪物"							or	-- Kaibutsu
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "紅蓮華"							or	-- Gurenge
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "群青"							or	-- Gunjou
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ドライフラワー"						or	-- Dry flower
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "夜に駆ける"						or	-- Yoru ni kakeru
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ルカルカ★ナイトフィーバー"				or	-- Luka luka night fever
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "恋愛レボリューション21"				or	-- Renai revolution 21
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "勿忘"							or	-- Wasurena
+	--OTHER SONGS	
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "春竜 ～Haryu～"					
+	then
+		return ""
+	elseif
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "The legend of MAX"				or
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "The legend of MAX(X-Special)"	
+	then
+		return "ZZ"
+	else
+		return GAMESTATE:GetCurrentSong():GetDisplayArtist()
+	end
+end
+
+function RegionFile()
+	if FILEMAN:DoesFileExist("/Themes/Region.lua") then
+		return "/Themes/Region.lua"
+	else
+		return THEME:GetPathB("","_none")
+	end
+end
 
 -- �W���b�W���x���ݒ�
 function JudgmentTransformCommand( self, params )

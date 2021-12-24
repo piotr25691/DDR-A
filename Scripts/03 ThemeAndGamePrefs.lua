@@ -7,6 +7,9 @@ end
 function Game_ShockArrows()
 	return GetUserPrefB("OptionRowShockArrows")
 end
+function Game_Loader()
+	return GetUserPrefB("OptionRowLoader")
+end
 
 function ScreenGameplay_P1X()
 	local st = GAMESTATE:GetCurrentStyle():GetStepsType();

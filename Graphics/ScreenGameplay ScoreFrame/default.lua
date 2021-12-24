@@ -19,18 +19,18 @@ t[#t+1] = Def.ActorFrame{
             CurrentSongChangedMessageCommand=function(s)
                 local song = GAMESTATE:GetCurrentSong()
                 if song then
-                    s:settext(song:GetDisplayFullTitle())
+                    s:settext(SongName())
                 end
             end,
         };
 		--Artist
         Def.BitmapText{
             Font="_arial black 28px",
-            InitCommand=function(s) s:zoom(0.7):maxwidth(360):y(17) end,
+            InitCommand=function(s) s:zoom(0.7):maxwidth(450):y(17) end,
             CurrentSongChangedMessageCommand=function(s)
                 local song = GAMESTATE:GetCurrentSong()
                 if song then
-                    s:settext(song:GetDisplayArtist())
+                    s:settext(ArtistName())
                 end
             end,
         }

@@ -15,8 +15,6 @@ function(table, ind)
 end
 })
 
-local regionPath = "/Themes/"
-
 --?d?????e????---------------------------
 function LoadCard(cColor,cColor2,Player,IsJoinFrame)
 	local t = Def.ActorFrame {
@@ -89,7 +87,7 @@ function LoadCard(cColor,cColor2,Player,IsJoinFrame)
         self:diffusealpha(0)
       end;
     };
-	LoadActor(regionPath.."Region.lua")..{
+	LoadActor(RegionFile())..{
       InitCommand=cmd(diffusealpha,0;zoom,1;x,135;y,-57);
       OnCommand=function(self)
         if IsJoinFrame then

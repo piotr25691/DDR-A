@@ -7,10 +7,10 @@ local x_table = {
   PlayerNumber_P2 = {SCREEN_CENTER_X+90, SCREEN_LEFT+354}
 }
 
-local Video = FILEMAN:DoesFileExist(GAMESTATE:GetCurrentSong():GetMusicPath():sub(1, -4).."avi") == false and FILEMAN:DoesFileExist(GAMESTATE:GetCurrentSong():GetMusicPath():sub(1, -4).."mp4") == false 
+local HasVideo = FILEMAN:DoesFileExist(GAMESTATE:GetCurrentSong():GetMusicPath():sub(1, -4).."avi") == false and FILEMAN:DoesFileExist(GAMESTATE:GetCurrentSong():GetMusicPath():sub(1, -4).."mp4") == false 
 
 for _, pn in ipairs(GAMESTATE:GetEnabledPlayers()) do
-	if Video then
+	if HasVideo then
 		if GetUserPref("OptionRowCutin")=='ON' then
 			if FILEMAN:DoesFileExist("/Characters/"..GAMESTATE:GetCharacter(pn):GetDisplayName().."/Cut-In") then
 				t[#t+1] = LoadActor("Cutin", pn)..{
