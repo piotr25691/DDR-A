@@ -6,11 +6,13 @@
 
 
 1) BlackScreen during Gameplay
+2) Region file won't be necessary. But, if you want it, follow the instructions.
 
 (ESPAÑOL)
 
 
 1) Pantalla Negra durante el juego
+2) Archivo Region no será necesario. Pero si lo quieres, sigue las instrucciones.
 
 # ENGLISH
 
@@ -23,8 +25,6 @@ Hey you guys! This is Curilang now in Github, please follow the instructions:
 1) Change your region in the file "Region.lua", this file has to be in Themes folder, not inside the theme.
 
    https://github.com/Curilang/Region.lua
-
-Please download the Region.lua file, without it the theme won't work!
 
 2) VERY IMPORTANT!, Configure your buttons, specially "MenuLeft, MenuRight, MenuUp, MenuDown". This is for use the
    correct buttons in the theme.
@@ -101,6 +101,8 @@ Por favor descarga el archivo Region.lua, sin él el tema no va a funcionar.
 • 17 - DDR A20
 
 • 18 - DDR A20 PLUS
+
+• DDR GRAND PRIX
 
 # NOTES / NOTAS
 
