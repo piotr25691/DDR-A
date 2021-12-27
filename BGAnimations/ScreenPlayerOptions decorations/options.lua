@@ -18,19 +18,19 @@ local function base_x()
 end
 
 local rownames;
-	if GetUserPref("OptionRowScreenCharacters")=='OFF' then
+	if GetUserPref("OptionRowScreenCharacters")=='ON' then
 		if GAMESTATE:IsExtraStage() or GAMESTATE:IsExtraStage2() then
 			rownames = {
 				"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter"
 			};
 		else
-			if GetUserPref("OptionRowOptionStage")=='OFF' then
+			if GetUserPref("OptionRowOptionStage")=='ON' then
 				rownames = {
-					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge","Characters"
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","SelectStage","Gauge"
 				};
-			else	
+			else
 				rownames = {
-					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","SelectStage","Gauge","Characters"
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge"
 				};
 			end;
 		end;
@@ -40,13 +40,13 @@ local rownames;
 				"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter"
 			};
 		else
-			if GetUserPref("OptionRowOptionStage")=='OFF' then
+			if GetUserPref("OptionRowOptionStage")=='ON' then
 				rownames = {
-					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge"
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","SelectStage","Gauge","Characters"
 				};
-			else	
+			else
 				rownames = {
-					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","SelectStage","Gauge"
+					"Speed","Accel","Appearance","Turn","Hide","Scroll","NoteSkins","Freeze","Jump","Remove","ScreenFilter","Gauge","Characters"
 				};
 			end;
 		end;

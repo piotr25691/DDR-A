@@ -6,11 +6,18 @@ if THEME:GetMetric("Common", "ScreenHeight") >= 1080 then
 	gFOV = 91.3
 end
 
+
 local t = Def.ActorFrame{
 	OnCommand=function(self)
 		self:Center():fov(gFOV);
 		Camera = self
-		if GetUserPref("OptionRowSlowMotion")=='A' then
+		if ReadPrefFromFile("OptionRowSlowMotion") ~= nil then
+			if GetUserPref("OptionRowSlowMotion")=='2014' then
+			
+			else
+				Camera:SetUpdateFunction(SlowMotion)
+			end;
+		else
 			Camera:SetUpdateFunction(SlowMotion)
 		end;
 	end;
@@ -24,18 +31,16 @@ if HasVideo then
 local DanceStagesDir = FILEMAN:GetDirListing("/DanceStages/", true, false)
 local DanceStageSelectedNumber = tonumber(GetUserPref("OptionRowStage"))
 
-if GetUserPref("OptionRowOptionStage")=='OFF' then
-    DanceStageSelectedNumber=1
-end
-
-if DanceStageSelectedNumber == 1 then
-    DanceStage = DanceStageSong()
-elseif DanceStageSelectedNumber == 2 then
-	DanceStage = DanceStagesDir[math.random(#DanceStagesDir)]
-else
-    DanceStage = DanceStagesDir[tonumber(GetUserPref("OptionRowStage"))-2]
+DanceStage = DanceStageSong()
+if ReadPrefFromFile("OptionRowStage") ~= nil then
+	if DanceStageSelectedNumber == 1 then
+		DanceStage = DanceStageSong()
+	elseif DanceStageSelectedNumber == 2 then
+		DanceStage = DanceStagesDir[math.random(#DanceStagesDir)]
+	else
+		DanceStage = DanceStagesDir[tonumber(GetUserPref("OptionRowStage"))-2]
+	end;
 end;
-
 ------- DANCESTAGE CONFIGURATOR -------
 
 function CheckStageConfigurationNumber(def,conf)

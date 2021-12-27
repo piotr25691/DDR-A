@@ -79,35 +79,24 @@ return Def.ActorFrame{
         Name="Title";
         InitCommand=cmd(x,-238;zoom,0.8;halign,0;maxwidth,560;diffuse,color("0,0,0,1"));
         SetCommand=function(s)
-          local song = GAMESTATE:GetCurrentSong()
-          local mw = SCREENMAN:GetTopScreen():GetChild("MusicWheel")
-          if not mw then return end
-          if song then
-            if song:GetDisplaySubTitle() == "" then
-            s:settext(song:GetDisplayMainTitle())
-            else
-            s:settext(song:GetDisplayFullTitle())
-            end
-          elseif mw:GetSelectedType('WheelItemDataType_Section') then
-            local group = mw:GetSelectedSection()
-            if group then
-            s:settext(GAMESTATE:GetSortOrder('SortOrder_Group') and SongAttributes.GetGroupName(group) or "")
-            end
-          else
-            s:settext("")
-          end
+			local song = GAMESTATE:GetCurrentSong()
+			if song then
+				s:settext(SongName())
+			else
+				s:settext("")
+			end
         end
       };
       LoadFont("_arial black 28px")..{
         Name="Artist";
         InitCommand=cmd(xy,-238,29;halign,0;maxwidth,540;zoomx,0.78;zoomy,0.65);
         SetCommand=function(s)
-          local song = GAMESTATE:GetCurrentSong()
-          if song then
-            s:settext(song:GetDisplayArtist())
-          else
-            s:settext("")
-          end
+        local song = GAMESTATE:GetCurrentSong()
+			if song then
+				s:settext(ArtistName())
+			else
+				s:settext("")
+			end
         end
       };
     };
