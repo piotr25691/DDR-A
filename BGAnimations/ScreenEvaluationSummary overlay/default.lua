@@ -191,12 +191,12 @@ for i = 1, mStages do
 				local sssong = ssStats:GetPlayedSongs()[1];
 				local sssmaint = sssong:GetDisplayFullTitle();
 				self:x(26);
-				self:settext(sssmaint);
-				if sssong:GetDisplaySubTitle() == "" then
-					self:y(0);
-				else
-					self:y(0);
-				end;
+				if sssmaint == "OurMemories" or sssmaint == "#OurMemories" then
+					self:settext("#OurMemories");
+				else	
+					self:settext(sssmaint);
+				end
+				self:y(0);
 				self:addy(8);
 			end;
 			OnCommand=function(self) 
@@ -204,30 +204,6 @@ for i = 1, mStages do
 				self:sleep(0.25+(i-mStages)*-0.1);
 				self:linear(0.2); 
 				self:zoomy(0.7);
-			end;
-			OffCommand=cmd(diffusealpha,0);	
-		};
-		
-		
-		-- Artist
-		LoadFont("_arial black 28px")..{
-			InitCommand=cmd(zoomx,0.5;maxwidth,393;diffuse,color("#ffffff");diffusealpha,0);
-			BeginCommand=function(self)
-				local sssong = ssStats:GetPlayedSongs()[1];
-				local sssartistt = sssong:GetDisplayArtist();
-				if sssong:GetDisplaySubTitle() == "" then
-					self:y(20);
-				else
-					self:y(20);
-				end;
-				self:x(26);
-				self:settext(sssartistt);
-			end;
-			OnCommand=function(self) 
-				self:zoomy(0);
-				self:sleep(0.25+(i-mStages)*-0.1);
-				self:linear(0.2); 
-				self:zoomy(0.5);
 			end;
 			OffCommand=cmd(diffusealpha,0);	
 		};

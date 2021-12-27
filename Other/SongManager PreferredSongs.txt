@@ -1,3 +1,23 @@
+---DDR GRAND PRIX 
+
+DDR GRAND PRIX\Kaibutsu
+DDR GRAND PRIX\Gurenge
+DDR GRAND PRIX\Gunjou
+13 - DDR X3 VS 2ndMIX\Connect
+14 - DDR 2013\JoJo ~Sono Chi no Sadame~
+14 - DDR 2013\Tsukematsukeru
+DDR GRAND PRIX\Dry flower
+13 - DDR X3 VS 2ndMIX\Heavy Rotation
+11 - DDR X\PORIRIZUMU
+14 - DDR 2013\Maji LOVE 1000%
+DDR GRAND PRIX\Yoru ni kakeru
+DDR GRAND PRIX\Luka luka night fever
+DDR GRAND PRIX\Renai revolution 21
+DDR GRAND PRIX\Wasurena
+14 - DDR 2013\BRIGHT STREAM
+14 - DDR 2013\LOVE & JOY -Risk Junk MIX-
+12 - DDR X2\resonance
+
 ---DDR A20 PLUS
 
 18 - DDR A20 PLUS\Ao ga kieru toki
@@ -11,6 +31,7 @@
 18 - DDR A20 PLUS\Kyousui ichika
 18 - DDR A20 PLUS\Koi
 18 - DDR A20 PLUS\Koko kara yoroshiku daisakusen 143
+18 - DDR A20 PLUS\Saika
 18 - DDR A20 PLUS\Sakasama Cinderella parade
 18 - DDR A20 PLUS\Zassou tamashii namen na yo!
 18 - DDR A20 PLUS\Shijou no laturia
@@ -21,22 +42,28 @@
 18 - DDR A20 PLUS\Skyclad no kansokusha
 18 - DDR A20 PLUS\Sekai no hate ni yakusoku no gaika wo -DDR Extended Megamix-
 18 - DDR A20 PLUS\Tsuioku no aria
+18 - DDR A20 PLUS\Telecaster B-boy
 18 - DDR A20 PLUS\Tokyo shinwa
 18 - DDR A20 PLUS\Nadame sukashi Negotiation
+18 - DDR A20 PLUS\No plan days
 18 - DDR A20 PLUS\Norepinephrine
 18 - DDR A20 PLUS\Hana wa oritashi kozue wa takashi
 18 - DDR A20 PLUS\Khorosho! Onigiri circus dan
 18 - DDR A20 PLUS\Haru wo tsugeru
 18 - DDR A20 PLUS\Hangyaku no disparate
 18 - DDR A20 PLUS\Hoshi no tsukurikata
+18 - DDR A20 PLUS\Monochrome moment
 18 - DDR A20 PLUS\YU-MOU-MU-HI
 18 - DDR A20 PLUS\Yumebuki
 18 - DDR A20 PLUS\Roki (Megumi Ogata)
 
+18 - DDR A20 PLUS\actualization of self (weaponized)
+18 - DDR A20 PLUS\Aftermath
 18 - DDR A20 PLUS\AI
 18 - DDR A20 PLUS\ANTI ANTHEM
 18 - DDR A20 PLUS\Bang Pad(Werk Mix)
 18 - DDR A20 PLUS\BITTER CHOCOLATE STRIKER
+18 - DDR A20 PLUS\BLAKE
 18 - DDR A20 PLUS\BRIDAL FESTIVAL !!!
 18 - DDR A20 PLUS\City Never Sleeps
 18 - DDR A20 PLUS\Come Back To Me
@@ -91,6 +118,7 @@
 18 - DDR A20 PLUS\Run The Show
 18 - DDR A20 PLUS\Seize The Day
 18 - DDR A20 PLUS\SHINY DAYS
+18 - DDR A20 PLUS\Shout It Out
 18 - DDR A20 PLUS\Sparkle Smilin'
 18 - DDR A20 PLUS\STEP MACHINE
 18 - DDR A20 PLUS\Step This Way
@@ -101,6 +129,7 @@
 18 - DDR A20 PLUS\Together Going My Way
 18 - DDR A20 PLUS\Triple Cross
 18 - DDR A20 PLUS\Twinkle Wonderland
+18 - DDR A20 PLUS\TYPHON
 18 - DDR A20 PLUS\Uh-Oh
 18 - DDR A20 PLUS\Vertigo
 18 - DDR A20 PLUS\We're so Happy
@@ -311,7 +340,7 @@
 16 - DDR A\HANDS UP IN THE AIR
 16 - DDR A\Happy
 16 - DDR A\Ha-lle-lu-jah
-16 - DDR A\Help me ERINNNNNN
+16 - DDR A\Help me, ERINNNNNN!!
 16 - DDR A\High School Love
 16 - DDR A\Hillbilly Shoes
 16 - DDR A\Hopeful
@@ -328,7 +357,7 @@
 16 - DDR A\More One Night
 16 - DDR A\Neutrino
 16 - DDR A\New Century
-16 - DDR A\#OurMemories
+16 - DDR A\OurMemories
 16 - DDR A\out of focus
 16 - DDR A\Poochie
 16 - DDR A\POSSESSION (20th Anniversary Mix)
@@ -482,14 +511,12 @@
 
 ---DanceDanceRevolution(2013)
 
-14 - DDR 2013\Tsukematsukeru
 14 - DDR 2013\Furisodation
 14 - DDR 2013\U-u-uma uma (Speedcake Remix)
 14 - DDR 2013\Okome no oishii takikata, soshite okome wo taberu koto ni yoru sono kouka
 14 - DDR 2013\Orion wo nazoru
 14 - DDR 2013\Colorful Pastel
 14 - DDR 2013\Kiken na kajitsu
-14 - DDR 2013\JoJo ~Sono Chi no Sadame~
 14 - DDR 2013\Zutto Mitsu Meteite (Ryu Remix)
 14 - DDR 2013\Seiten Bon Voyage
 14 - DDR 2013\Sousei Note
@@ -497,7 +524,6 @@
 14 - DDR 2013\Nagisa no koakuma lovely~radio
 14 - DDR 2013\Nijiiro no hana
 14 - DDR 2013\Who Floats
-14 - DDR 2013\Maji LOVE 1000%
 14 - DDR 2013\Meumeupettantan!!
 14 - DDR 2013\Lucky Lucky
 14 - DDR 2013\Rin to shite saku hana no gotoku ~HinaBitter edition~
@@ -512,7 +538,6 @@
 14 - DDR 2013\Beautiful Dream
 14 - DDR 2013\Blew My Mind
 14 - DDR 2013\Bombay Bomb
-14 - DDR 2013\BRIGHT STREAM
 14 - DDR 2013\Burst The Gravity
 14 - DDR 2013\Children of the Beat
 14 - DDR 2013\Chinese Snowy Dance
@@ -530,7 +555,6 @@
 14 - DDR 2013\heron
 14 - DDR 2013\Hoping To Be Good
 14 - DDR 2013\JOKER
-14 - DDR 2013\LOVE & JOY -Risk Junk MIX-
 14 - DDR 2013\Magnetic
 14 - DDR 2013\Mickey Mouse March(Eurobeat Version)
 14 - DDR 2013\Monkey Business
@@ -571,8 +595,6 @@
 13 - DDR X3 VS 2ndMIX\Shizuku
 13 - DDR X3 VS 2ndMIX\Sumidagawa karenka
 13 - DDR X3 VS 2ndMIX\Tenjou no Hoshi -Reimeiki-
-13 - DDR X3 VS 2ndMIX\Connect
-13 - DDR X3 VS 2ndMIX\Heavy Rotation
 13 - DDR X3 VS 2ndMIX\Beautiful Receipt
 13 - DDR X3 VS 2ndMIX\Memeshikute
 13 - DDR X3 VS 2ndMIX\Ryouran Hit Chart
@@ -707,7 +729,6 @@
 12 - DDR X2\Poseidon (kors k mix)
 12 - DDR X2\POSSESSION
 12 - DDR X2\real-high-SPEED
-12 - DDR X2\resonance
 12 - DDR X2\roppongi EVOLVED ver.A
 12 - DDR X2\roppongi EVOLVED ver.B
 12 - DDR X2\roppongi EVOLVED ver.C
@@ -743,7 +764,6 @@
 ---DDR X
 
 11 - DDR X\Suki Melo
-11 - DDR X\PORIRIZUMU
 11 - DDR X\SEKAI HA ODORU
 11 - DDR X\Rin To Shite Saku Hana No Gotoku
 11 - DDR X\Tabibito
@@ -1001,8 +1021,8 @@
 08 - DDR EXTREME\Kiss me all night long
 08 - DDR EXTREME\LA BAMBA
 08 - DDR EXTREME\L'amour et la liberté(DDR Ver.)
-08 - DDR EXTREME\LOVE♥SHINE
-08 - DDR EXTREME\♥Love²シュガ→♥
+08 - DDR EXTREME\LOVE LOVE SHINE
+08 - DDR EXTREME\LOVE LOVE SUGAR
 08 - DDR EXTREME\Miracle Moon ～L.E.D.LIGHT STYLE MIX～
 08 - DDR EXTREME\PARANOIA survivor
 08 - DDR EXTREME\PARANOIA survivor MAX
@@ -1067,43 +1087,115 @@
 
 ---DDR 5thMIX
 
+05 - DDR 5thMIX\ODORU PONPOKOLIN
 05 - DDR 5thMIX\SANA MOLLETE NE ENTE
+05 - DDR 5thMIX\MATSURI JAPAN
+05 - DDR 5thMIX\ROMANCE NO KAMISAMA
+
 05 - DDR 5thMIX\ABSOLUTE
 05 - DDR 5thMIX\Abyss
 05 - DDR 5thMIX\AFRONOVA PRIMEVAL
+05 - DDR 5thMIX\AGAINST ALL ODDS (Definitive MIX)
+05 - DDR 5thMIX\B4U glorious style
+05 - DDR 5thMIX\BE TOGETHER
 05 - DDR 5thMIX\BROKEN MY HEART
-05 - DDR 5thMIX\CAN'T STOP FALLIN' IN LOVE ～SPEED MIX～
+05 - DDR 5thMIX\CAN'T STOP FALLIN' IN LOVE ~SPEED MIX~
+05 - DDR 5thMIX\DANCING ALL ALONE
+05 - DDR 5thMIX\DIVE
 05 - DDR 5thMIX\DXY!
+05 - DDR 5thMIX\DYNAMITE RAVE(Long ver.)
 05 - DDR 5thMIX\ECSTASY
 05 - DDR 5thMIX\Electro Tuned ( the SubS Mix )
 05 - DDR 5thMIX\Healing Vision
+05 - DDR 5thMIX\HOT LIMIT
+05 - DDR 5thMIX\I Was The One
 05 - DDR 5thMIX\INSERTiON
+05 - DDR 5thMIX\MOONLIGHT SHADOW (New Vocal Version)
+05 - DDR 5thMIX\MOVIN ON (Extended Moon Mix)
+05 - DDR 5thMIX\Mr.T. (take me higher)
+05 - DDR 5thMIX\MY GENERATION (Fat Beat Mix)
+05 - DDR 5thMIX\NEVER ENDING STORY (Power Club Vocal Mix)
+05 - DDR 5thMIX\NO LIMIT (RM Remix)
+05 - DDR 5thMIX\OOPS!...I DID IT AGAIN (Fired Up MIX)
 05 - DDR 5thMIX\PARANOiA ETERNAL
+05 - DDR 5thMIX\Radical Faith
+05 - DDR 5thMIX\Remember You
+05 - DDR 5thMIX\RIGHT NOW
 05 - DDR 5thMIX\STILL IN MY HEART
+05 - DDR 5thMIX\SWING IT
+05 - DDR 5thMIX\TEST MY BEST
+05 - DDR 5thMIX\THE CUBE
+05 - DDR 5thMIX\THE TWIST (Double Pump MIX)
+05 - DDR 5thMIX\TRIBAL DANCE (ALMIGHTY MIX)
+
+05 - DDR 5thMIX\17SAI
 
 
 ---DDR 4thMIX
 
 04 - DDR 4thMIX\B4U
 04 - DDR 4thMIX\BABY BABY GIMME YOUR LOVE
+04 - DDR 4thMIX\BOYS (EURO MIX)
 04 - DDR 4thMIX\BURNIN' THE FLOOR
+04 - DDR 4thMIX\CAFE
 04 - DDR 4thMIX\CAN'T STOP FALLIN' IN LOVE
+04 - DDR 4thMIX\CAT'S EYE (Ventura Mix)
 04 - DDR 4thMIX\CELEBRATE NITE
-04 - DDR 4thMIX\Don't Stop!～AMD 2nd MIX～
+04 - DDR 4thMIX\CONGA FEELING
+04 - DDR 4thMIX\DAM DARIRAM (KCP MIX)
+04 - DDR 4thMIX\DO ME (H.I.G.E.O. MIX
+04 - DDR 4thMIX\Don't Stop!~AMD 2nd MIX~
+04 - DDR 4thMIX\DREAM A DREAM
 04 - DDR 4thMIX\DROP OUT
+04 - DDR 4thMIX\EAT YOU UP
 04 - DDR 4thMIX\era (nostalmix)
+04 - DDR 4thMIX\FURUHATA'S THEME
+04 - DDR 4thMIX\Get me in your sight (AMD CANCUN MIX)
+04 - DDR 4thMIX\GOTCHA (The Theme From STARSKY & HUTCH)
+04 - DDR 4thMIX\HAVE YOU NEVER BEEN MELLOW (MM GROOVIN MIX)
+04 - DDR 4thMIX\HERO (HAPPY GRANDALE MIX)
 04 - DDR 4thMIX\HIGHER
 04 - DDR 4thMIX\Holic
+04 - DDR 4thMIX\HYPNOTIC CRISIS
 04 - DDR 4thMIX\HYSTERIA
+04 - DDR 4thMIX\IF YOU WERE HERE (B4 ZA BEAT MIX)
+04 - DDR 4thMIX\IN THE HEAT OF THE NIGHT
+04 - DDR 4thMIX\KICK THE CAN
 04 - DDR 4thMIX\LEADING CYBER
-04 - DDR 4thMIX\LOVE AGAIN TONIGHT～For Melissa MIX～
+04 - DDR 4thMIX\Leat the beat hit em!
+04 - DDR 4thMIX\Let's talk it over
+04 - DDR 4thMIX\LOVE AGAIN TONIGHT~For Melissa MIX~
+04 - DDR 4thMIX\Lupin the 3rd '78
+04 - DDR 4thMIX\Make Your Move
+04 - DDR 4thMIX\MUSIC"
 04 - DDR 4thMIX\MY SUMMER LOVE
+04 - DDR 4thMIX\NA-NA
+04 - DDR 4thMIX\NEVER GONNA MAKE (FACTORY DANCE TEAM MIX)
+04 - DDR 4thMIX\never let you down
+04 - DDR 4thMIX\NIGHT IN MOTION
+04 - DDR 4thMIX\ONE TWO (LITTLE BITCH)
+04 - DDR 4thMIX\ONLY YOU
 04 - DDR 4thMIX\ORION.78(AMeuro-MIX)
 04 - DDR 4thMIX\PARANOIA EVOLUTION
+04 - DDR 4thMIX\PETIT LOVE
+04 - DDR 4thMIX\PINK DINOSAUR
+04 - DDR 4thMIX\RHYTHM AND POLICE (K.O.G G3 Mix)
+04 - DDR 4thMIX\SAINT GOES MARCHING (REMIX)
 04 - DDR 4thMIX\SEXY PLANET
+04 - DDR 4thMIX\SHAKE YOUR BOOTY
+04 - DDR 4thMIX\SHOOTING STAR
+04 - DDR 4thMIX\SKY HIGH
 04 - DDR 4thMIX\SUPER STAR
+04 - DDR 4thMIX\SYNCHRONIZED LOVE (Red Monster Hyper Mix)
+04 - DDR 4thMIX\THE 7 JUMP
+04 - DDR 4thMIX\THEME FROM ENTER THE DRAGON (notorious mix)"
 04 - DDR 4thMIX\TRIP MACHINE CLIMAX
+04 - DDR 4thMIX\WALKIE TALKIE
 04 - DDR 4thMIX\WILD RUSH
+04 - DDR 4thMIX\WONDA (SPEED K MIX)
+04 - DDR 4thMIX\Young Forever
+
+04 - DDR 4thMIX\1,2,3,4, 007
 04 - DDR 4thMIX\.59
 
 ---DDR 3rdMIX
@@ -1117,19 +1209,46 @@
 03 - DDR 3rdMIX\CUTIE CHASER
 03 - DDR 3rdMIX\DAM DARIRAM
 03 - DDR 3rdMIX\DEAD END
+03 - DDR 3rdMIX\DO IT ALL NIGHT
 03 - DDR 3rdMIX\DROP THE BOMB
 03 - DDR 3rdMIX\DYNAMITE RAVE
-03 - DDR 3rdMIX\GRADIUSIC CYBER ～AMD G5 MIX～
+03 - DDR 3rdMIX\END OF THE CENTURY
+03 - DDR 3rdMIX\FLASHDANCE (WHAT A FEELING)
+03 - DDR 3rdMIX\FOLLOW THE SUN (90 IN THE SHADE MIX)
+03 - DDR 3rdMIX\gentle stress (AMD SEXUAL MIX)
+03 - DDR 3rdMIX\GET UP (BEFORE THE NIGHT IS OVER)
+03 - DDR 3rdMIX\GET UP AND DANCE
+03 - DDR 3rdMIX\GIMME GIMME GIMME
+03 - DDR 3rdMIX\GRADIUSIC CYBER ~AMD G5 MIX~
+03 - DDR 3rdMIX\HERO (KCP DISCOTIQUE MIX)
+03 - DDR 3rdMIX\HOLIDAY
+03 - DDR 3rdMIX\IF YOU CAN SAY GOODBYE
+03 - DDR 3rdMIX\IN THE NAVY '99 (XXL Disaster Remix)
+03 - DDR 3rdMIX\IT ONLY TAKES A MINUTE (Extended Remix)
+03 - DDR 3rdMIX\Jam Jam Reggae
 03 - DDR 3rdMIX\KEEP ON MOVIN'
 03 - DDR 3rdMIX\La Señorita
 03 - DDR 3rdMIX\La Señorita Virtual
+03 - DDR 3rdMIX\LET THEM MOVE
 03 - DDR 3rdMIX\LOVE THIS FEELIN'
 03 - DDR 3rdMIX\LUV TO ME (AMD MIX)
+03 - DDR 3rdMIX\MR. WONDERFUL
+03 - DDR 3rdMIX\OH NICK PLEASE NOT SO QUICK
+03 - DDR 3rdMIX\OPERATOR
 03 - DDR 3rdMIX\PARANOiA Rebirth
+03 - DDR 3rdMIX\ROCK BEAT
 03 - DDR 3rdMIX\Silent Hill
+03 - DDR 3rdMIX\SO MANY MEN
+03 - DDR 3rdMIX\THE RACE
 03 - DDR 3rdMIX\think ya better D
-03 - DDR 3rdMIX\TRIP MACHINE～luv mix～
+03 - DDR 3rdMIX\TRIP MACHINE~luv mix~
 03 - DDR 3rdMIX\TURN ME ON (HEAVENLY MIX)
+03 - DDR 3rdMIX\UPSIDE DOWN
+03 - DDR 3rdMIX\VOL.4
+03 - DDR 3rdMIX\WONDERLAND (UKS MIX)
+03 - DDR 3rdMIX\XANADU
+
+03 - DDR 3rdMIX\20,NOVEMBER (D.D.R. version)
 
 ---DDR 2ndMIX
 

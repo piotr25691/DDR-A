@@ -106,7 +106,11 @@ return Def.ActorFrame{
 			SetMessageCommand=function(self,params)
 				local song = params.Song
 				if song then
-					self:settext(song:GetDisplayFullTitle())
+					if song:GetDisplayFullTitle() == "OurMemories" or song:GetDisplayFullTitle() == "#OurMemories" then
+						self:settext("#OurMemories")
+					else	
+						self:settext(song:GetDisplayFullTitle())
+					end
 				end
 			end;
 		};

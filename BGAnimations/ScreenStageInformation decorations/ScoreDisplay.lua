@@ -1,7 +1,6 @@
 local t = Def.ActorFrame{};
 local OffsetX = 205;
 local SleepOffset = 0.3;
-local regionPath = "/Themes/"
 
 function StageTopRecord(pn) --�^�ǳ̰��������Ӭ���
 	local SongOrCourse, StepsOrTrail;
@@ -390,7 +389,7 @@ t[#t+1]=Def.ActorFrame{
 		end;
 	};
 
-	LoadActor(regionPath.."Region.lua")..{
+	LoadActor(RegionFile())..{
 		InitCommand=function(s) s:x(pn == PLAYER_1 and SCREEN_LEFT-OffsetX+105 or SCREEN_RIGHT+OffsetX+105)
 		s:y(SCREEN_CENTER_Y+230):zoom(1) end,
 		OnCommand=function(s) s:sleep(SleepOffset+0.2):linear(0.05)
