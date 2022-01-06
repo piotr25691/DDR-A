@@ -7,12 +7,14 @@
 
 1) BlackScreen during Gameplay
 2) Region file won't be necessary. But, if you want it, follow the instructions.
+3) Big GrooveRadar in some songs fixed.
 
 (ESPAÑOL)
 
 
 1) Pantalla Negra durante el juego
 2) Archivo Region no será necesario. Pero si lo quieres, sigue las instrucciones.
+3) GrooveRadar gigante en algunas canciones arreglado.
 
 # ENGLISH
 
