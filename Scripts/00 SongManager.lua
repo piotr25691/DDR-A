@@ -1202,7 +1202,7 @@ function DanceStageSong()
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Skywalking" 													then return "(X2) CYBER"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Small Steps" 													then return "(X2) CLUB"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "SODA GALAXY" 													then return "(X) BOOM BOOM BOOM"
-		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Something Just Like This (Alesso Remix) " 						then return "(X2) CLUB"
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Something Just Like This (Alesso Remix)" 						then return "(X2) CLUB"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Splash Gold" 													then return Boom().." BOOM DARK"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Starlight in the Snow" 											then return "(X2) CLUB"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Starry Sky" 													then return "(X) DANCING RAYS"
@@ -1265,6 +1265,7 @@ function DanceStageSong()
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Aftermath"														then return Boom().." BOOM BLUE"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "AI"																then return "(X2) CYBER"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ANTI ANTHEM"													then return Boom().." BOOM YELLOW"
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Better Than Me"													then return "(X2) CYBER"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "Bang Pad(Werk Mix)"												then return "(X2) CYBER"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "BITTER CHOCOLATE STRIKER"										then return "(X2) CYBER"
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "BLAKE"															then return "(X) BOOM BOOM BOOM"
@@ -1346,7 +1347,10 @@ function DanceStageSong()
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "怪物"															then return "(X) DAWN STREETS"				--Kaibutsu
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "紅蓮華"															then return "(X) BOOM BOOM BOOM"			--Gurenge
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "群青"															then return "(X) CRYSTALDIUM"				--Gunjou
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "さくらんぼ"															then return "(X) LOVE SWEETS"				--Sakuranbo
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "じょいふる"															then return "(X) LOVE SWEETS"				--Joyful
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ドライフラワー"														then return "(X) DAWN STREETS"				--Dry flower
+		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "夏祭り"															then return "(X2) BOOM LIGHT"				--Natsumatsuri
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "夜に駆ける"														then return "(X) BOOM BOOM BOOM"			--Yoru ni kakeru
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ルカルカ★ナイトフィーバー"												then return "(X) DANCING RAYS"				--Luka luka night fever
 		elseif GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "恋愛レボリューション21"													then return "(X2) CLUB"						--Renai revolution 21

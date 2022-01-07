@@ -148,7 +148,10 @@ function ArtistName()
 		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "怪物"							or	-- Kaibutsu
 		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "紅蓮華"							or	-- Gurenge
 		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "群青"							or	-- Gunjou
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "さくらんぼ"							or 	-- Sakuranbo
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "じょいふる"							or 	-- Joyful
 		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ドライフラワー"						or	-- Dry flower
+		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "夏祭り"							or	-- Natsumatsuri
 		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "夜に駆ける"						or	-- Yoru ni kakeru
 		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "ルカルカ★ナイトフィーバー"				or	-- Luka luka night fever
 		GAMESTATE:GetCurrentSong():GetDisplayFullTitle() == "恋愛レボリューション21"				or	-- Renai revolution 21

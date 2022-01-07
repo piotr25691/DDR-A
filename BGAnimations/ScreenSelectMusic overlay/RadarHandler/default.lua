@@ -38,9 +38,6 @@ for i,v in ipairs(GR) do
                     else
                         Value = math.floor(steps:GetRadarValues(pn):GetValue('RadarCategory_'..v[3])*100)
                     end
-					-- local Value = GAMESTATE:GetCurrentSteps(pn):GetRadarValues(pn):GetValue('RadarCategory_'..v[3])
-                    -- local RadarDDRNum = math.floor(Value*100)
-                    -- s:settext(RadarDDRNum)
                     s:settext(Value)
                 else
                     s:settext("0")
@@ -60,8 +57,17 @@ return Def.ActorFrame{
             OnCommand=function(s) s:zoom(0):sleep(0.4):linear(0.3):zoom(1) end,
         };
 		label;
-		create_ddr_groove_radar("radar",0,0,pn,60,color("#ffcf00"),{color("#ffcf00"),color("#ffcf00"),color("#ffcf00"),color("#ffcf00"),color("#ffcf00")})..{
-            OnCommand=function(s) s:diffusealpha(0.75):zoom(0):sleep(0.4):linear(0.3):zoom(2) end,
+		create_ddr_groove_radar("radar",0,0,pn,120,color("#ffcf00"),{color("#ffcf00"),color("#ffcf00"),color("#ffcf00"),color("#ffcf00"),color("#ffcf00")})..{
+            OnCommand=function(s) s:diffusealpha(0.75):zoom(0):sleep(0.4):linear(0.3) end,
+			SetCommand=function(s)
+				if GAMESTATE:GetCurrentSong() then
+					if DDR_groove_radar_values[GAMESTATE:GetCurrentStyle():GetStepsType()][GAMESTATE:GetCurrentSong():GetDisplayMainTitle()] ~= nil then
+						s:zoom(1) 
+					else
+						s:zoom(0.5)
+					end
+				end
+			end,
 			CurrentSongChangedMessageCommand=function(s) s:queuecommand("Set") end,
             ["CurrentSteps"..ToEnumShortString(pn).."ChangedMessageCommand"]=function(s) s:queuecommand("Set") end,
             ["CurrentTrail"..ToEnumShortString(pn).."ChangedMessageCommand"]=function(s) s:queuecommand("Set") end,
