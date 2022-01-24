@@ -1,4 +1,4 @@
-## :warning: The original repo for this theme is gone, we now continue from here.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El repositorio original de este tema ya no está, ahora continuamos desde aquí.
+## :warning: The original repo for this theme is gone, we now continue from here.
 
 # Another Inori's Theme Edit
 
