@@ -1,3 +1,5 @@
+## :warning: The original repo for this theme is gone, we now continue from here.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El repositorio original de este tema ya no está, ahora continuamos desde aquí.
+
 # Another Inori's Theme Edit
 
 # FIXES / REPARACIONES
@@ -26,7 +28,7 @@ https://github.com/Enciso0720/Enciso0720DDR
 Hey you guys! This is Curilang now in Github, please follow the instructions:
 1) Change your region in the file "Region.lua", this file has to be in Themes folder, not inside the theme.
 
-   https://github.com/Curilang/Region.lua
+   ~~https://github.com/Curilang/Region.lua~~
 
 2) VERY IMPORTANT!, Configure your buttons, specially "MenuLeft, MenuRight, MenuUp, MenuDown". This is for use the
    correct buttons in the theme.
@@ -48,7 +50,7 @@ https://github.com/Enciso0720/Enciso0720DDR
 Qué tal chicos! Curilang aquí ahora en Github, por favor sigue las instrucciones y recomendaciones.
 1) Cambia tu región en el archivo "Region.lua", este archivo debe estar en la carpeta Themes, no dentro del tema.
 
-   https://github.com/Curilang/Region.lua
+   ~~https://github.com/Curilang/Region.lua~~
 
 2) MUY IMPORTANTE! Configura tus botones, especialmente "MenuIzquierda, MenuDerecha, MenuArriba, MenuAbajo". Esto es
    para que el tema funcione con los controles correctos.
